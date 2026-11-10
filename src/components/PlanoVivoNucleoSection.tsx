@@ -153,8 +153,8 @@ export const PlanoVivoNucleoSection: React.FC<PlanoVivoNucleoSectionProps> = ({
           <div className="lg:col-span-7 space-y-3">
             <div className="relative rounded-xl overflow-hidden border border-[#B5AE9E] bg-[#132A1E] shadow-sm select-none">
               <img
-                src="/assets/archivo/nucleo-archivo-siembra-historica.jpg"
-                alt="Fotografía histórica de época: Estudiantes en la huerta y granja del Núcleo Escolar de Altagracia con sus 6 estaciones interactivas"
+                src="/assets/img/hito-1960-nucleo.jpg"
+                alt="Plano ilustrado de la Granja Vocacional del Núcleo Escolar de Altagracia en 1960 con sus 6 estaciones interactivas"
                 className="w-full h-auto aspect-16/10 object-cover block"
               />
 

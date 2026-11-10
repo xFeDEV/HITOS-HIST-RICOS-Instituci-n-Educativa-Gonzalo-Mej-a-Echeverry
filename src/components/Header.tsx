@@ -40,41 +40,12 @@ export const Header: React.FC<HeaderProps> = ({
           className="flex items-center gap-2.5 sm:gap-3.5 group focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C59B38] rounded-md min-w-0"
           aria-label="Institución Educativa Gonzalo Mejía Echeverry - Ir al inicio"
         >
-          {/* Editorial Open Book Emblem (fiel a la referencia visual, sin inventar un escudo oficial) */}
-          <div
-            className="w-10 h-9 sm:w-12 sm:h-10 flex items-center justify-center shrink-0"
-            title="Símbolo editorial de memoria institucional"
-          >
-            <svg
-              viewBox="0 0 56 44"
-              className="w-10 h-9 sm:w-12 sm:h-10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              {/* Golden upper pages / arch */}
-              <path
-                d="M28 15 C22 8, 13 7, 6 10 C12 13, 21 15, 28 21 C35 15, 44 13, 50 10 C43 7, 34 8, 28 15 Z"
-                fill="#C59B38"
-              />
-              {/* Deep green open book pages */}
-              <path
-                d="M4 15 C13 15, 22 18, 27 24 L27 39 C21 34, 13 32, 4 32 Z"
-                fill="#113826"
-              />
-              <path
-                d="M52 15 C43 15, 34 18, 29 24 L29 39 C35 34, 43 32, 52 32 Z"
-                fill="#113826"
-              />
-              {/* Subtle base spine */}
-              <path
-                d="M24 39 Q28 42 32 39"
-                stroke="#C59B38"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-            </svg>
-          </div>
+          {/* Escudo Oficial IE Gonzalo Mejía Echeverry */}
+          <img
+            src="/assets/img/logo_gonzalo.png"
+            alt="Escudo Oficial Institución Educativa Gonzalo Mejía Echeverry"
+            className="w-10 h-10 sm:w-12 sm:h-12 object-contain shrink-0 group-hover:scale-105 transition-transform"
+          />
 
           <div
             className="h-8 sm:h-9 w-px bg-[#B5AE9E] shrink-0"
@@ -91,7 +62,7 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
         </a>
 
-        {/* Navigation Links & Archive CTA */}
+        {/* Navigation Links, Institutional Logos & Archive CTA */}
         <nav
           aria-label="Navegación principal"
           className="flex items-center gap-3 sm:gap-5"
@@ -120,6 +91,22 @@ export const Header: React.FC<HeaderProps> = ({
                 )}
               </a>
             ))}
+          </div>
+
+          {/* Logos Aliados Académicos: Etnoeducación y UTP */}
+          <div className="hidden sm:flex items-center gap-2 pl-2 border-l border-[#C7BFA8]">
+            <img
+              src="/assets/img/logo_etno.png"
+              alt="Licenciatura en Etnoeducación y Desarrollo Comunitario"
+              title="Licenciatura en Etnoeducación y Desarrollo Comunitario UTP"
+              className="h-8 sm:h-9 w-auto object-contain hover:scale-105 transition-transform"
+            />
+            <img
+              src="/assets/img/logo-utp.png"
+              alt="Universidad Tecnológica de Pereira"
+              title="Universidad Tecnológica de Pereira"
+              className="h-7 sm:h-8 w-auto object-contain hover:scale-105 transition-transform"
+            />
           </div>
 
           <div

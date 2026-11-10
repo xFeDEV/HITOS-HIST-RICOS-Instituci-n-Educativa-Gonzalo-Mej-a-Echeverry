@@ -60,12 +60,29 @@ export const InstitutionSection: React.FC<InstitutionSectionProps> = ({
               <strong>Sistema Agrocafetalero</strong>.
             </p>
 
-            {/* Nota de rigor sobre el símbolo editorial */}
-            <p className="text-xs text-[#5A625C] italic bg-[#FAF7F0] border border-[#DCD5C3] rounded-lg px-3.5 py-2">
-              Nota editorial: El emblema de libro abierto del encabezado corresponde
-              a la identidad gráfica de este archivo de memoria institucional y no
-              sustituye el escudo oficial físico del plantel.
-            </p>
+            {/* Alianza Institucional: Escudo Oficial y Logos Aliados */}
+            <div className="flex flex-wrap items-center gap-3.5 bg-[#FAF7F0] border border-[#DCD5C3] rounded-xl p-3 shadow-2xs">
+              <img
+                src="/assets/img/logo_gonzalo.png"
+                alt="Escudo Oficial Institución Educativa Gonzalo Mejía Echeverry"
+                className="h-12 w-auto object-contain shrink-0"
+              />
+              <div className="h-8 w-px bg-[#DCD5C3] hidden sm:block" aria-hidden="true" />
+              <img
+                src="/assets/img/logo_etno.png"
+                alt="Licenciatura en Etnoeducación y Desarrollo Comunitario"
+                className="h-12 w-auto object-contain shrink-0"
+              />
+              <div className="h-8 w-px bg-[#DCD5C3] hidden sm:block" aria-hidden="true" />
+              <img
+                src="/assets/img/logo-utp.png"
+                alt="Universidad Tecnológica de Pereira"
+                className="h-10 w-auto object-contain shrink-0"
+              />
+              <p className="text-xs text-[#4A524C] leading-snug flex-1 min-w-[180px]">
+                Proyecto desarrollado en articulación entre la <strong>Institución Educativa Gonzalo Mejía Echeverry</strong> y la <strong>Licenciatura en Etnoeducación</strong> de la <strong>Universidad Tecnológica de Pereira</strong>.
+              </p>
+            </div>
           </div>
 
           {/* Tarjeta de datos verificados */}

@@ -447,18 +447,45 @@ export function App() {
         />
       </main>
 
-      {/* Pie de página institucional */}
-      <footer className="border-t border-[#C7BFA8] bg-[#EAE3D2] py-6 px-4 sm:px-8 text-xs text-[#3D4A41]">
-        <div className="max-w-[1280px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-          <div>
-            <strong className="font-serif-display text-sm text-[#113826]">
-              Institución Educativa Gonzalo Mejía Echeverry
-            </strong>{' '}
-            · Corregimiento de Altagracia, Pereira, Risaralda (NIT 891408309-6)
+      {/* Pie de página institucional con los 3 logos principales */}
+      <footer className="border-t border-[#C7BFA8] bg-[#EAE3D2] py-8 px-4 sm:px-8 text-xs text-[#3D4A41]">
+        <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="flex items-center gap-3.5">
+            <img
+              src="/assets/img/logo_gonzalo.png"
+              alt="Escudo Institución Educativa Gonzalo Mejía Echeverry"
+              className="h-12 sm:h-14 w-auto object-contain"
+            />
+            <div>
+              <strong className="font-serif-display text-sm sm:text-base text-[#113826] block">
+                Institución Educativa Gonzalo Mejía Echeverry
+              </strong>
+              <span className="text-[#4A524C]">
+                Corregimiento de Altagracia, Pereira, Risaralda · NIT 891408309-6
+              </span>
+            </div>
           </div>
-          <div className="text-center sm:text-right">
-            Tejido de Memoria Comunitaria · Licenciatura en Etnoeducación ·
-            Universidad Tecnológica de Pereira (2026)
+
+          <div className="flex items-center gap-4">
+            <img
+              src="/assets/img/logo_etno.png"
+              alt="Licenciatura en Etnoeducación y Desarrollo Comunitario"
+              className="h-12 sm:h-14 w-auto object-contain"
+            />
+            <div className="h-9 w-px bg-[#C7BFA8]" aria-hidden="true" />
+            <img
+              src="/assets/img/logo-utp.png"
+              alt="Universidad Tecnológica de Pereira"
+              className="h-10 sm:h-12 w-auto object-contain"
+            />
+            <div className="text-left max-w-xs">
+              <span className="font-semibold text-[#113826] block text-xs">
+                Tejido de Memoria Comunitaria
+              </span>
+              <span className="text-[11px] text-[#5A625C] block">
+                Licenciatura en Etnoeducación · Universidad Tecnológica de Pereira (2026)
+              </span>
+            </div>
           </div>
         </div>
       </footer>

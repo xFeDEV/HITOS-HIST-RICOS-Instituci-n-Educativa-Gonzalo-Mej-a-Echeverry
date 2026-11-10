@@ -525,19 +525,25 @@ export const VocesMaestrosLideresSection: React.FC<
         </div>
       )}
 
-      {/* Banner de Créditos Académicos UTP y Licenciatura en Etnoeducación */}
+      {/* Banner de Créditos Académicos UTP, Etnoeducación e IE Gonzalo Mejía Echeverry */}
       <div className="mt-10 rounded-2xl border-2 border-[#C59B38] bg-[#FAF7F0] p-5 sm:p-6 flex flex-col lg:flex-row items-center justify-between gap-6 shadow-xs">
-        <div className="flex items-center gap-4 shrink-0">
+        <div className="flex items-center gap-3.5 shrink-0">
           <img
-            src="/assets/img/logo-utp.png"
-            alt="Escudo Universidad Tecnológica de Pereira UTP"
-            className="h-14 w-auto object-contain"
+            src="/assets/img/logo_gonzalo.png"
+            alt="Escudo Institución Educativa Gonzalo Mejía Echeverry"
+            className="h-14 sm:h-16 w-auto object-contain"
           />
           <div className="h-10 w-px bg-[#C7BFA8]" aria-hidden="true" />
           <img
-            src="/assets/img/logo-etnoeducacion.png"
-            alt="Logo Licenciatura en Etnoeducación UTP"
-            className="h-14 w-auto object-contain"
+            src="/assets/img/logo_etno.png"
+            alt="Logo Licenciatura en Etnoeducación y Desarrollo Comunitario UTP"
+            className="h-14 sm:h-16 w-auto object-contain"
+          />
+          <div className="h-10 w-px bg-[#C7BFA8]" aria-hidden="true" />
+          <img
+            src="/assets/img/logo-utp.png"
+            alt="Escudo Universidad Tecnológica de Pereira UTP"
+            className="h-12 sm:h-14 w-auto object-contain"
           />
         </div>
 
