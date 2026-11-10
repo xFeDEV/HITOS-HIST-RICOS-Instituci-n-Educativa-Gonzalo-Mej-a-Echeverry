@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="skyWarm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D2E4DB"/>
+      <stop offset="55%" stop-color="#EEF3EC"/>
+      <stop offset="100%" stop-color="#E5DEC9"/>
+    </linearGradient>
+    <linearGradient id="courtyardFloor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D9D1C0"/>
+      <stop offset="100%" stop-color="#BFB5A0"/>
+    </linearGradient>
+  </defs>
+  <!-- Sky & Distant Green Mountains of Altagracia -->
+  <rect width="800" height="450" fill="url(#skyWarm)"/>
+  <path d="M180 230 Q350 130 560 185 T800 155 L800 320 L180 320 Z" fill="#3B6349" opacity="0.32"/>
+  <path d="M240 250 Q440 165 650 210 T800 190 L800 320 L240 320 Z" fill="#234832" opacity="0.45"/>
+
+  <!-- Background Academic Wing (across the courtyard) -->
+  <g transform="translate(260, 195)">
+    <!-- Tiled Roof -->
+    <polygon points="-15,38 255,6 525,38" fill="#8E4A32" stroke="#113826" stroke-width="2"/>
+    <rect x="0" y="38" width="510" height="88" fill="#F5F0E3" stroke="#113826" stroke-width="2"/>
+    <!-- Green Lower Wainscot -->
+    <rect x="0" y="96" width="510" height="30" fill="#184530"/>
+    <!-- Windows & Columns -->
+    <g fill="#263E31" stroke="#113826" stroke-width="1.5">
+      <rect x="30" y="52" width="52" height="34"/>
+      <rect x="112" y="52" width="52" height="34"/>
+      <rect x="194" y="52" width="52" height="34"/>
+      <rect x="276" y="52" width="52" height="34"/>
+      <rect x="358" y="52" width="52" height="34"/>
+      <rect x="440" y="52" width="45" height="34"/>
+    </g>
+    <g fill="#E6DEC8" stroke="#113826" stroke-width="1.5">
+      <rect x="92" y="38" width="10" height="88"/>
+      <rect x="174" y="38" width="10" height="88"/>
+      <rect x="256" y="38" width="10" height="88"/>
+      <rect x="338" y="38" width="10" height="88"/>
+      <rect x="420" y="38" width="10" height="88"/>
+    </g>
+  </g>
+
+  <!-- Courtyard Ground -->
+  <polygon points="0,320 800,320 800,450 0,450" fill="url(#courtyardFloor)"/>
+  <!-- Courtyard perspective paving lines -->
+  <g stroke="#A89F8B" stroke-width="1" opacity="0.6">
+    <line x1="260" y1="320" x2="80" y2="450"/>
+    <line x1="380" y1="320" x2="290" y2="450"/>
+    <line x1="500" y1="320" x2="520" y2="450"/>
+    <line x1="620" y1="320" x2="740" y2="450"/>
+    <line x1="180" y1="355" x2="800" y2="355"/>
+    <line x1="100" y1="395" x2="800" y2="395"/>
+  </g>
+
+  <!-- Left Perspective Brick & Colonnade Corridor Wing (Foreground Left) -->
+  <g>
+    <!-- Inner Corridor Wall in Perspective -->
+    <polygon points="0,85 285,195 285,325 0,415" fill="#DFD7C4" stroke="#113826" stroke-width="2"/>
+    <!-- Brick & Green Lower Wall in Corridor -->
+    <polygon points="0,265 285,280 285,325 0,415" fill="#9E4F36" stroke="#113826" stroke-width="1.5"/>
+    <!-- Classroom Windows on Left Wall -->
+    <polygon points="22,135 88,158 88,245 22,248" fill="#1F382B" stroke="#113826" stroke-width="2"/>
+    <polygon points="118,168 172,186 172,256 118,255" fill="#1F382B" stroke="#113826" stroke-width="1.8"/>
+    <polygon points="196,194 238,208 238,265 196,262" fill="#1F382B" stroke="#113826" stroke-width="1.5"/>
+
+    <!-- Perspective Roof Overhang -->
+    <polygon points="0,25 315,178 285,195 0,85" fill="#7A422E" stroke="#113826" stroke-width="2"/>
+
+    <!-- Foreground Brick & Green Pillars along the Colonnade -->
+    <!-- Pillar 1 (closest) -->
+    <polygon points="55,68 86,82 86,388 55,398" fill="#B55B3F" stroke="#113826" stroke-width="2"/>
+    <polygon points="55,295 86,298 86,388 55,398" fill="#113826"/>
+    <!-- Pillar 2 -->
+    <polygon points="142,108 166,119 166,362 142,370" fill="#B55B3F" stroke="#113826" stroke-width="2"/>
+    <polygon points="142,288 166,290 166,362 142,370" fill="#113826"/>
+    <!-- Pillar 3 -->
+    <polygon points="212,140 230,149 230,342 212,348" fill="#B55B3F" stroke="#113826" stroke-width="1.8"/>
+    <polygon points="212,282 230,284 230,342 212,348" fill="#113826"/>
+    <!-- Pillar 4 -->
+    <polygon points="264,165 278,172 278,327 264,332" fill="#B55B3F" stroke="#113826" stroke-width="1.5"/>
+    <polygon points="264,278 278,280 278,327 264,332" fill="#113826"/>
+
+    <!-- Hanging Ferns along the Corridor -->
+    <g fill="#235739">
+      <circle cx="114" cy="142" r="14"/>
+      <circle cx="188" cy="168" r="11"/>
+      <circle cx="246" cy="188" r="9"/>
+    </g>
+  </g>
+
+  <!-- Central Heritage Courtyard Tree & Stone Planter -->
+  <g>
+    <!-- Trunk and Spreading Branches -->
+    <path d="M475 355 C475 295 470 250 465 200 C430 155 375 125 320 105" stroke="#4A3728" stroke-width="18" stroke-linecap="round" fill="none"/>
+    <path d="M468 215 C510 165 570 135 635 115" stroke="#4A3728" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <path d="M465 195 C460 140 480 95 510 60" stroke="#4A3728" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <!-- Rich Layered Canopy -->
+    <ellipse cx="365" cy="105" rx="115" ry="52" fill="#16422B" opacity="0.92"/>
+    <ellipse cx="485" cy="78" rx="130" ry="58" fill="#1D5236" opacity="0.92"/>
+    <ellipse cx="595" cy="112" rx="110" ry="48" fill="#16422B" opacity="0.9"/>
+    <ellipse cx="435" cy="122" rx="95" ry="42" fill="#2E6B49" opacity="0.85"/>
+    <ellipse cx="545" cy="128" rx="85" ry="38" fill="#2E6B49" opacity="0.85"/>
+
+    <!-- Tropical Courtyard Plants at Tree Base -->
+    <ellipse cx="435" cy="348" rx="45" ry="22" fill="#285E3E"/>
+    <ellipse cx="510" cy="350" rx="42" ry="20" fill="#1E4B31"/>
+    <ellipse cx="475" cy="345" rx="35" ry="18" fill="#3B7A54"/>
+
+    <!-- Stone Planter Box & Courtyard Benches -->
+    <polygon points="365,355 585,355 605,382 345,382" fill="#9E9685" stroke="#113826" stroke-width="2"/>
+    <rect x="635" y="362" width="45" height="22" rx="3" fill="#8C8474" stroke="#113826" stroke-width="1.5"/>
+    <rect x="695" y="372" width="48" height="24" rx="3" fill="#8C8474" stroke="#113826" stroke-width="1.5"/>
+  </g>
+</svg>

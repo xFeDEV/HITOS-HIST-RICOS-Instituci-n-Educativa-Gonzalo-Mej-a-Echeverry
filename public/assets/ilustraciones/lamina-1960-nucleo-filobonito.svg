@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="sky60" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D6E3D8"/>
+      <stop offset="65%" stop-color="#F2EFE4"/>
+      <stop offset="100%" stop-color="#D5DEC9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#sky60)"/>
+  <path d="M0 265 Q220 185 450 240 T800 215 L800 450 L0 450 Z" fill="#6F8C73" opacity="0.42"/>
+  <path d="M0 305 Q180 245 410 290 T800 265 L800 450 L0 450 Z" fill="#43664C" opacity="0.5"/>
+  <!-- Escuela Vocacional Agrícola El Núcleo / Comité de Cafeteros Material Building -->
+  <g transform="translate(145, 165)">
+    <polygon points="-20,55 255,5 530,55 510,72 0,72" fill="#8C4A32" stroke="#113826" stroke-width="2.5"/>
+    <rect x="10" y="72" width="490" height="120" fill="#FAF7F0" stroke="#113826" stroke-width="2.5"/>
+    <rect x="10" y="148" width="490" height="44" fill="#1D4D37"/>
+    <g fill="#EFE9DA" stroke="#113826" stroke-width="2">
+      <rect x="45" y="72" width="14" height="120"/>
+      <rect x="138" y="72" width="14" height="120"/>
+      <rect x="231" y="72" width="14" height="120"/>
+      <rect x="324" y="72" width="14" height="120"/>
+      <rect x="417" y="72" width="14" height="120"/>
+    </g>
+    <g fill="#2A4736" stroke="#113826" stroke-width="1.5">
+      <rect x="74" y="92" width="48" height="40"/>
+      <rect x="167" y="92" width="48" height="40"/>
+      <rect x="260" y="92" width="48" height="40"/>
+      <rect x="353" y="92" width="48" height="40"/>
+      <rect x="444" y="92" width="40" height="100"/>
+    </g>
+  </g>
+  <rect x="0" y="357" width="800" height="93" fill="#526E50"/>
+  <g fill="#113826" opacity="0.65">
+    <circle cx="110" cy="395" r="16"/>
+    <circle cx="165" cy="395" r="18"/>
+    <circle cx="220" cy="395" r="16"/>
+    <circle cx="275" cy="395" r="18"/>
+    <circle cx="560" cy="395" r="17"/>
+    <circle cx="620" cy="395" r="19"/>
+    <circle cx="680" cy="395" r="16"/>
+  </g>
+</svg>

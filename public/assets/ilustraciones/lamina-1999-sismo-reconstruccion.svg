@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="sky99" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DDD4C0"/>
+      <stop offset="100%" stop-color="#F2ECE0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#sky99)"/>
+  <rect x="40" y="65" width="350" height="340" rx="10" fill="#EAE2D0" stroke="#8C5A3C" stroke-width="2"/>
+  <rect x="410" y="65" width="350" height="340" rx="10" fill="#FAF7F0" stroke="#113826" stroke-width="2"/>
+  
+  <text x="65" y="108" font-family="Georgia, serif" font-size="17" font-weight="bold" fill="#6E3B26">25 de enero de 1999 · 1:19 p. m.</text>
+  <text x="65" y="128" font-family="sans-serif" font-size="12.5" fill="#5A4B40">Hito de inflexión en el Eje Cafetero</text>
+  <polyline points="65,172 115,172 128,152 140,197 152,122 165,222 178,112 190,212 202,142 215,187 228,162 245,172 365,172" fill="none" stroke="#8C3B2B" stroke-width="2.5"/>
+  <g transform="translate(80, 220)">
+    <polygon points="0,35 135,0 270,35" fill="#7D5A46" stroke="#3B2F23" stroke-width="2"/>
+    <rect x="15" y="35" width="240" height="100" fill="#DFD5C0" stroke="#3B2F23" stroke-width="2"/>
+    <polyline points="95,35 105,65 92,90 110,135" fill="none" stroke="#5C2D1E" stroke-width="3"/>
+    <polyline points="185,35 175,70 190,105" fill="none" stroke="#5C2D1E" stroke-width="2.5"/>
+    <rect x="40" y="55" width="40" height="40" fill="#4A3D33"/>
+    <rect x="195" y="55" width="40" height="40" fill="#4A3D33"/>
+  </g>
+  <text x="65" y="384" font-family="sans-serif" font-size="12" fill="#5A4B40">Afectación en Sede Principal, Núcleo y Cañaveral</text>
+
+  <text x="435" y="108" font-family="Georgia, serif" font-size="17" font-weight="bold" fill="#113826">Reconstrucción y Resiliencia</text>
+  <text x="435" y="128" font-family="sans-serif" font-size="12.5" fill="#3D4A41">Nuevos bloques, comedores y colores campesinos</text>
+  <g transform="translate(445, 200)">
+    <polygon points="-10,45 140,5 290,45" fill="#B55A38" stroke="#113826" stroke-width="2"/>
+    <rect x="10" y="45" width="260" height="115" fill="#FAF7F0" stroke="#113826" stroke-width="2"/>
+    <rect x="10" y="122" width="260" height="38" fill="#113826"/>
+    <rect x="10" y="114" width="260" height="8" fill="#C59B38"/>
+    <rect x="35" y="65" width="45" height="38" fill="#1D4D37"/>
+    <rect x="108" y="65" width="64" height="95" fill="#C59B38" stroke="#113826" stroke-width="2"/>
+    <rect x="195" y="65" width="45" height="38" fill="#1D4D37"/>
+  </g>
+  <text x="435" y="384" font-family="sans-serif" font-size="12" fill="#3D4A41">Intervención del FOREC y reconstrucción comunitaria</text>
+</svg>

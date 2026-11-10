@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="sky3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EAE2CE"/>
+      <stop offset="100%" stop-color="#F6F2E8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#sky3)"/>
+  <!-- Architectural & Archival composition for 1967 Creation Ordinance -->
+  <rect x="45" y="45" width="710" height="410" rx="12" fill="#FAF7F0" stroke="#C59B38" stroke-width="2"/>
+  <rect x="55" y="55" width="690" height="390" rx="8" fill="none" stroke="#113826" stroke-width="1" stroke-dasharray="4 4"/>
+  <!-- Left side: Historical document seal & ordinance representation -->
+  <g transform="translate(95, 110)">
+    <rect x="0" y="0" width="240" height="290" rx="6" fill="#F2ECE0" stroke="#113826" stroke-width="2"/>
+    <rect x="20" y="24" width="200" height="8" rx="4" fill="#C59B38"/>
+    <text x="120" y="58" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#113826">ORDENANZA DE 1967</text>
+    <text x="120" y="80" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#4A524C">ASAMBLEA DEPARTAMENTAL</text>
+    <text x="120" y="96" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#4A524C">DE RISARALDA</text>
+    <line x1="35" y1="115" x2="205" y2="115" stroke="#C7BFA8" stroke-width="1.5"/>
+    <g fill="#7A847D">
+      <rect x="35" y="132" width="170" height="6" rx="3"/>
+      <rect x="35" y="148" width="155" height="6" rx="3"/>
+      <rect x="35" y="164" width="165" height="6" rx="3"/>
+      <rect x="35" y="180" width="140" height="6" rx="3"/>
+    </g>
+    <circle cx="120" cy="235" r="28" fill="#113826" stroke="#C59B38" stroke-width="3"/>
+    <text x="120" y="241" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="bold" fill="#FAF7F0">1967</text>
+  </g>
+  <!-- Right side: Architectural elevation of original central Altagracia school -->
+  <g transform="translate(375, 120)">
+    <text x="0" y="18" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#113826">Fundación Oficial del Colegio</text>
+    <text x="0" y="42" font-family="sans-serif" font-size="13" fill="#3D4A41">Sector central de La Virgen · Corregimiento de Altagracia</text>
+    <!-- Illustration of the initial urban/central building -->
+    <g transform="translate(0, 65)">
+      <polygon points="0,45 165,0 330,45" fill="#9E7820" opacity="0.25" stroke="#113826" stroke-width="2"/>
+      <rect x="15" y="45" width="300" height="120" fill="#EFE9DA" stroke="#113826" stroke-width="2"/>
+      <rect x="15" y="130" width="300" height="35" fill="#113826"/>
+      <rect x="40" y="65" width="45" height="45" fill="#FAF7F0" stroke="#113826" stroke-width="2"/>
+      <rect x="105" y="65" width="45" height="45" fill="#FAF7F0" stroke="#113826" stroke-width="2"/>
+      <rect x="175" y="65" width="45" height="100" fill="#C59B38" stroke="#113826" stroke-width="2"/>
+      <rect x="240" y="65" width="45" height="45" fill="#FAF7F0" stroke="#113826" stroke-width="2"/>
+    </g>
+    <text x="0" y="255" font-family="Georgia, serif" font-style="italic" font-size="13" fill="#113826">En honor a Gonzalo Mejía Echeverry, concejal y dirigente cívico</text>
+    <text x="0" y="275" font-family="sans-serif" font-size="11.5" fill="#636E66">Educación secundaria para los egresados de las escuelas veredales</text>
+  </g>
+</svg>
