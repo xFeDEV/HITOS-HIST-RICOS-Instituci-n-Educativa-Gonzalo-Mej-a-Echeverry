@@ -6,18 +6,13 @@ import { HistoricalMilestone, SedeInfo, MilestoneMedia } from '../types/timeline
  * Institución Educativa Gonzalo Mejía Echeverry (Corregimiento de Altagracia, Pereira)
  * ============================================================================
  *
- * ¿CÓMO EDITAR O AÑADIR HITOS Y FOTOGRAFÍAS?
- * 1. Para añadir fotografías reales de archivo, cópielas en la carpeta `public/assets/archivo/`
- *    y referéncielas con la ruta `/assets/archivo/nombre-imagen.jpg`.
- * 2. En cada elemento de `media`, establezca `isRealProjectAsset: true` cuando se trate de una
- *    fotografía o documento histórico verificado de la institución, o `false` cuando sea una
- *    lámina ilustrativa de referencia.
- * 3. En cada hito de `MILESTONES_DATA`, use `verificationStatus: 'verificado'` para datos
- *    respaldados por el anteproyecto/entrevistas, o `verificationStatus: 'ejemplo'` para
- *    mostrar el aviso visible de "Contenido de ejemplo pendiente de validación".
+ * Todas las imágenes de hitos y sedes corresponden a FOTOGRAFÍAS REALES DE ARCHIVO,
+ * documentos oficiales y registros fotográficos en sede provenientes de la investigación
+ * "La Escuela como Tejido de Memoria Comunitaria" (Licenciatura en Etnoeducación UTP, 2026).
  */
 
 export const PROJECT_ARCHIVE_MEDIA: Record<string, MilestoneMedia> = {
+  // --- Cartografía y soportes documentales institucionales ---
   mapaAereoAltagracia: {
     id: 'media-mapa-aereo',
     url: '/assets/archivo/mapa-aereo-altagracia.png',
@@ -27,7 +22,7 @@ export const PROJECT_ARCHIVE_MEDIA: Record<string, MilestoneMedia> = {
     yearOrPeriod: '2026',
     source: 'Anteproyecto de investigación UTP (Adaptación de Google Earth, 2026)',
     isRealProjectAsset: true,
-    assetTypeLabel: 'Archivo real del proyecto · Cartografía satelital',
+    assetTypeLabel: 'Archivo real · Cartografía satelital',
     sede: 'Sede Principal y Sede Núcleo',
     alt: 'Fotografía satelital del corregimiento de Altagracia mostrando la ubicación de la Sede Principal en la vereda La Una y el Núcleo Escolar Altagracia',
   },
@@ -40,7 +35,7 @@ export const PROJECT_ARCHIVE_MEDIA: Record<string, MilestoneMedia> = {
     yearOrPeriod: '1940 – 2017',
     source: 'Archivo del proyecto: Figura 1 · Hitos relevantes (Gañán Morales, 2026)',
     isRealProjectAsset: true,
-    assetTypeLabel: 'Archivo real del proyecto · Infografía documental',
+    assetTypeLabel: 'Archivo real · Infografía documental',
     sede: 'Todas las sedes',
     alt: 'Infografía vertical con los seis hitos históricos principales de la Institución Educativa Gonzalo Mejía Echeverry entre 1940 y 2017',
   },
@@ -53,9 +48,344 @@ export const PROJECT_ARCHIVE_MEDIA: Record<string, MilestoneMedia> = {
     yearOrPeriod: '9 de febrero de 2026',
     source: 'Gestión de Documentos UTP · Semillero Familia, Comunidad y Escuela',
     isRealProjectAsset: true,
-    assetTypeLabel: 'Archivo real del proyecto · Soporte documental',
+    assetTypeLabel: 'Archivo real · Soporte documental',
     sede: 'Todas las sedes',
     alt: 'Sello de radicación documental de la Universidad Tecnológica de Pereira con fecha 09/02/2026',
+  },
+
+  // --- Patrimonio epigráfico y vallas institucionales ---
+  placaInauguracion1997: {
+    id: 'media-placa-inauguracion-1997',
+    url: '/assets/archivo/placa-inauguracion-1997.jpg',
+    title: 'Placa conmemorativa en mármol: Inauguración Sede Principal (10 de mayo de 1997)',
+    caption:
+      'Placa original en mármol tallada como libro abierto en muro de ladrillo. Documenta la inauguración formal con el alcalde Juan Manuel Arango, el secretario Fernando Fontal Bueno, el rector Armando Hoyos Valencia, el Consejo Directivo 1996 y líderes comunitarios como doña Ana Rita Ramírez.',
+    yearOrPeriod: '10 de mayo de 1997',
+    source: 'Archivo fotográfico patrimonial en muro de la Sede Principal',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Patrimonio epigráfico en mármol',
+    sede: 'Sede Principal (Vereda La Una)',
+    alt: 'Placa en mármol tallada en forma de libro abierto conmemorando la inauguración del Colegio Oficial Gonzalo Mejía Echeverry el 10 de mayo de 1997',
+  },
+  vallaInstitucionalSedes: {
+    id: 'media-valla-institucional-sedes',
+    url: '/assets/archivo/valla-institucional-sedes-sabatina.jpg',
+    title: 'Valla institucional de entrada: Articulación de las sedes rurales y Jornada Sabatina',
+    caption:
+      'Valla oficial en el acceso principal que testimonia la identidad institucional unificada: todos los grados, Jornada Sabatina y la red de sedes rurales (Cañaveral, Filobonito, Núcleo Escolar, El Jazmín, Guadualito y El Agrado).',
+    yearOrPeriod: 'Década de 2000 – Presente',
+    source: 'Registro fotográfico en entrada vehicular de la Sede Principal',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía real en sede',
+    sede: 'Todas las sedes',
+    alt: 'Valla institucional de la Institución Educativa Gonzalo Mejía Echeverry destacando la Sabatina y las sedes rurales',
+  },
+  muralMapaVerde: {
+    id: 'media-mural-mapa-verde',
+    url: '/assets/archivo/mural-mapa-verde-institucional.jpg',
+    title: 'Cartografía oficial: Mural enmarcado del "Mapa Verde" institucional',
+    caption:
+      'Cartografía ambiental detallada enmarcada en pared de ladrillo: señala senderos ecológicos, guaduales, áreas de cultivo, miradores de aves, huertas medicinales y proyectos PRAE y GEOvida del colegio.',
+    yearOrPeriod: '2024 – 2026',
+    source: 'Registro fotográfico en instalaciones de la Sede Principal',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Cartografía ambiental de campus',
+    sede: 'Sede Principal',
+    alt: 'Mural enmarcado del Mapa Verde de la Institución Educativa Gonzalo Mejía Echeverry mostrando senderos ecológicos y zonas de conservación',
+  },
+
+  // --- Panorámicas y registros de campus de sedes ---
+  sedePrincipalPanoramicaArcoiris: {
+    id: 'media-principal-arcoiris',
+    url: '/assets/archivo/sede-principal-panoramica-arcoiris.jpg',
+    title: 'Fotografía panorámica: Sede Principal en la vereda La Una con arcoíris',
+    caption:
+      'Vista aérea panorámica del campus campestre en la vereda La Una: pabellones en ladrillo a la vista, coliseo cubierto con paneles solares, kiosco central y vegetación nativa enmarcada por un arcoíris sobre la cordillera.',
+    yearOrPeriod: 'Fotografía institucional contemporánea',
+    source: 'Registro fotográfico oficial de la institución',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía real panorámica',
+    sede: 'Sede Principal (Vereda La Una)',
+    alt: 'Panorámica elevada de la Sede Principal en la vereda La Una con un arcoíris en el cielo sobre las montañas',
+  },
+  sedePrincipalColiseoKiosco: {
+    id: 'media-principal-coliseo-kiosco',
+    url: '/assets/archivo/sede-principal-coliseo-kiosco.jpg',
+    title: 'Campus Sede Principal: Kiosco cónico de ladrillo, coliseo deportivo y zonas verdes',
+    caption:
+      'Espacios abiertos y deportivos de la Sede Principal que representaron un salto sustancial frente al hacinamiento de la antigua sede urbana del sector de La Virgen.',
+    yearOrPeriod: 'Fotografía contemporánea',
+    source: 'Registro fotográfico en campus de La Una',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía real de campus',
+    sede: 'Sede Principal',
+    alt: 'Zonas deportivas, kiosco de ladrillo y coliseo cubierto de la Sede Principal',
+  },
+  sedeCanaveralFachada: {
+    id: 'media-canaveral-fachada',
+    url: '/assets/archivo/sede-canaveral-fachada.jpg',
+    title: 'Fotografía real: Fachada, corredores campesinos y cancha de la Sede Cañaveral',
+    caption:
+      'Sede Cañaveral fundada en la década de 1940 a base de mingas y festivales populares en terreno de Pedro Patiño, y reconstruida tras el terremoto de 1999 con colores campesinos.',
+    yearOrPeriod: 'Fotografía institucional contemporánea',
+    source: 'Registro fotográfico en Sede Cañaveral',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía real institucional',
+    sede: 'Sede Cañaveral',
+    alt: 'Fachada en blanco y verde menta de la Sede Cañaveral con su cancha múltiple y vegetación',
+  },
+  sedeElAgradoFachada: {
+    id: 'media-agrado-fachada',
+    url: '/assets/archivo/sede-el-agrado-fachada-cancha.jpg',
+    title: 'Fotografía real: Sede El Agrado (Vereda El Estanquillo)',
+    caption:
+      'La escuela más distante del corregimiento, levantada en material por el Comité de Cafeteros tras el paso por la finca Remolinos c. 1948. En la pared destaca el mural "Siembra amor, cosecha felicidad".',
+    yearOrPeriod: 'Fotografía institucional contemporánea',
+    source: 'Registro fotográfico en Sede El Agrado',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía real institucional',
+    sede: 'Sede El Agrado',
+    alt: 'Fachada en blanco y azul de la Sede El Agrado con cancha de baloncesto y cielo azul despejado',
+  },
+  elAgradoCampanaMural: {
+    id: 'media-agrado-campana',
+    url: '/assets/archivo/el-agrado-campana-mural.jpg',
+    title: 'Detalle arquitectónico rural: Campana escolar de bronce y mural en El Agrado',
+    caption:
+      'Campana tradicional de llamada a clases suspendida de la viga del corredor y mural pedagógico "Siembra amor, cosecha felicidad - IE GME Sedes Rurales".',
+    yearOrPeriod: 'Fotografía de archivo en sede',
+    source: 'Registro fotográfico en Sede El Agrado',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía real de archivo',
+    sede: 'Sede El Agrado',
+    alt: 'Campana escolar de bronce en la viga del corredor y mural de la Sede El Agrado',
+  },
+  sedeNucleoQuiosco: {
+    id: 'media-nucleo-quiosco',
+    url: '/assets/archivo/sede-nucleo-quiosco.jpg',
+    title: 'Fotografía real: Kiosco pedagógico y jardines de la Sede Núcleo Escolar',
+    caption:
+      'Instalaciones de primaria de la Sede Núcleo Escolar Altagracia, con su letrero oficial y jardines que mantienen viva la memoria de la antigua granja vocacional de 1960.',
+    yearOrPeriod: 'Fotografía contemporánea',
+    source: 'Registro fotográfico en Sede Núcleo',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía real institucional',
+    sede: 'Sede El Núcleo',
+    alt: 'Kiosco cubierto y jardines de la Sede Núcleo Escolar con aviso de Primaria Gonzalo Mejía Echeverry',
+  },
+  sedeFilobonitoFachada: {
+    id: 'media-filobonito-fachada',
+    url: '/assets/archivo/filobonito-fachada-jardin.jpg',
+    title: 'Fotografía real: Fachada comunitaria y jardines florales de la Sede Filobonito',
+    caption:
+      'Sede Filobonito edificada por el Comité de Cafeteros en lote donado por don Pío Durán tras el riesgo de derrumbes en su sitio antiguo, embellecida con murales de aves y flores.',
+    yearOrPeriod: 'Fotografía contemporánea',
+    source: 'Registro fotográfico en Sede Filobonito',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía real institucional',
+    sede: 'Sede Filobonito',
+    alt: 'Fachada de la Sede Filobonito con jardín de flores, mural de colibrí y juegos infantiles pintados en la cancha',
+  },
+  sedeElJazminFachada: {
+    id: 'media-jazmin-fachada',
+    url: '/assets/archivo/sede-el-jazmin-fachada-cancha.jpg',
+    title: 'Fotografía real: Sede El Jazmín y cancha deportiva comunitaria',
+    caption:
+      'Instalaciones en amarillo y azul de la Sede El Jazmín contiguas a la cancha polideportiva, en predio donado hace más de sesenta años por una familia de la región.',
+    yearOrPeriod: 'Fotografía contemporánea',
+    source: 'Registro fotográfico en Sede El Jazmín',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía real institucional',
+    sede: 'Sede El Jazmín',
+    alt: 'Edificación escolar de la Sede El Jazmín con cancha múltiple, portería de fútbol y murales estudiantiles',
+  },
+  elJazminEstudiantesRecreo: {
+    id: 'media-jazmin-recreo',
+    url: '/assets/archivo/el-jazmin-estudiantes-recreo.jpg',
+    title: 'Fotografía real: Estudiantes y docentes compartiendo en el patio de El Jazmín',
+    caption:
+      'Vida cotidiana y ambiente de inclusión pedagógica en el patio de la Sede El Jazmín, donde convergen el Semillero de Hormigas y los programas de la Fundación Renovar Ser.',
+    yearOrPeriod: 'Fotografía de campo 2025',
+    source: 'Registro fotográfico en Sede El Jazmín',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía real institucional',
+    sede: 'Sede El Jazmín',
+    alt: 'Niños y profesores en la cancha de la Sede El Jazmín durante el recreo bajo un cielo azul con nubes',
+  },
+
+  // --- Archivo fotográfico histórico de época (papel y álbumes) ---
+  nucleoArchivoSiembraHistorica: {
+    id: 'media-nucleo-siembra-historica',
+    url: '/assets/archivo/nucleo-archivo-siembra-historica.jpg',
+    title: 'Fotografía histórica de época: Escolares regando la huerta elevada en el Núcleo Agrícola',
+    caption:
+      'Documento fotográfico original en papel de la Escuela Vocacional Agrícola: niños campesinos con regaderas amarillas cultivando en camas elevadas de guadua frente al paisaje montañoso de Altagracia.',
+    yearOrPeriod: 'Años 1960 – 1970 (Archivo histórico de época)',
+    source: 'Archivo fotográfico patrimonial de la Sede Núcleo Escolar Altagracia',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía histórica de época',
+    sede: 'Sede El Núcleo',
+    alt: 'Fotografía física antigua de estudiantes en camisa blanca regando plantas en un semillero elevado de guadua',
+  },
+  nucleoDocentesTrajeTipico: {
+    id: 'media-nucleo-docentes-tipico',
+    url: '/assets/archivo/nucleo-docentes-traje-tipico.jpg',
+    title: 'Fotografía histórica de época: Maestros y comunidad del Núcleo en trajes típicos',
+    caption:
+      'Docentes y familias de la Sede Núcleo ataviados con trajes tradicionales del Paisaje Cultural Cafetero (sombreros aguadeños, ponchos, vestidos de chapolera y banda tricolor) en festividades de Altagracia.',
+    yearOrPeriod: 'Años 1970 – 1980 (Archivo histórico)',
+    source: 'Archivo fotográfico de la comunidad docente de la Sede Núcleo',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía histórica de época',
+    sede: 'Sede El Núcleo',
+    alt: 'Grupo de profesores y miembros de la comunidad con sombreros aguadeños, ponchos y vestidos folclóricos',
+  },
+  nucleoGraduacionEscuelaNueva: {
+    id: 'media-nucleo-graduacion-escuela-nueva',
+    url: '/assets/archivo/nucleo-graduacion-escuela-nueva.jpg',
+    title: 'Fotografía de archivo: Graduación infantil bajo el lema "Hacia la Escuela Nueva"',
+    caption:
+      'Fotografía de archivo conservada en álbum anillado: promoción de estudiantes con toga y birrete azul en la tarima escolar del Núcleo, respaldados por el letrero de transición pedagógica a Escuela Nueva.',
+    yearOrPeriod: 'Archivo escolar físico',
+    source: 'Álbum fotográfico histórico de la Sede Núcleo Escolar',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía histórica de archivo',
+    sede: 'Sede El Núcleo',
+    alt: 'Niños graduados con togas y birretes azules en el escenario escolar con el letrero Hacia la Escuela Nueva',
+  },
+  filobonitoIndependienteCarroza: {
+    id: 'media-filobonito-carroza',
+    url: '/assets/archivo/filobonito-independiente-carroza-yipao.jpg',
+    title: 'Fotografía histórica de época: Carroza Yipao del "C.E. Filobonito" independiente',
+    caption:
+      'Willys tradicional acondicionado como comparsa escolar con molinillos de viento y pancarta: "El reciclaje luz de esperanza - C.E. Filobonito", evidencia gráfica de la autonomía de la sede antes de la fusión.',
+    yearOrPeriod: 'Años 1990 – 2000 (Previo a la fusión)',
+    source: 'Archivo fotográfico comunitario de la Vereda Filobonito',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía histórica de época',
+    sede: 'Sede Filobonito',
+    alt: 'Jeep Willys decorado como carroza escolar con molinetes y pancarta artesanal del C.E. Filobonito',
+  },
+
+  // --- Resiliencia y memoria del sismo de 1999 ---
+  pancartaResilienciaTerremoto: {
+    id: 'media-pancarta-resiliencia',
+    url: '/assets/archivo/pancarta-los-muros-pueden-temblar.jpg',
+    title: 'Memoria y resiliencia: "Los muros pueden temblar, pero nuestras ganas de aprender permanecen siempre"',
+    caption:
+      'Pancarta institucional iluminada en la fachada escolar que resume con emoción el espíritu de resiliencia comunitaria tras el terremoto del 25 de enero de 1999 y la reconstrucción con el FOREC.',
+    yearOrPeriod: 'Memoria viva del sismo de 1999',
+    source: 'Registro fotográfico nocturno en Sede Filobonito',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía real de memoria colectiva',
+    sede: 'Todas las sedes',
+    alt: 'Pancarta en tela blanca iluminada en la noche con la frase Los muros pueden temblar pero nuestras ganas de aprender permanecen siempre',
+  },
+
+  // --- Prácticas contemporáneas agroecológicas y comunitarias ---
+  tallerJardinesPolinizadores: {
+    id: 'media-taller-polinizadores',
+    url: '/assets/archivo/taller-jardines-polinizadores.jpg',
+    title: 'Fotografía real: Taller de Jardines de Polinizadores en patio escolar',
+    caption:
+      'Estudiantes y docentes sentados en la cancha alrededor de cajones de flores nativas, sustratos y abonos en el taller ambiental desarrollado con la fundación Ceiba Verde.',
+    yearOrPeriod: '5 de noviembre de 2025',
+    source: 'Registro fotográfico del proyecto de investigación UTP',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía real del proyecto',
+    sede: 'Sede Filobonito y Red de Sedes',
+    alt: 'Grupo de niños y facilitador ambiental sentados en la cancha con plantas de flores para polinizadores',
+  },
+  canaveralAulasVivasClase: {
+    id: 'media-canaveral-aulas-vivas',
+    url: '/assets/archivo/canaveral-aulas-vivas-clase.jpg',
+    title: 'Fotografía real: Clase al aire libre en "Aulas Vivas" (Sede Cañaveral)',
+    caption:
+      'Círculo de aprendizaje sobre el césped bajo matas de plátano frente a las colinas cafeteras, materializando el modelo pedagógico de aula viva y laboratorio territorial.',
+    yearOrPeriod: '25 de septiembre de 2025',
+    source: 'Registro de campo del semillero UTP en Sede Cañaveral',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía real del proyecto',
+    sede: 'Sede Cañaveral',
+    alt: 'Estudiantes reunidos en círculo sobre el pasto verde en clase al aire libre en Cañaveral',
+  },
+  nucleoHuertaEstudiantes: {
+    id: 'media-nucleo-huerta-estudiantes',
+    url: '/assets/archivo/nucleo-huerta-estudiantes.jpg',
+    title: 'Fotografía real: Prácticas agrícolas en las eras de cultivo de la Sede Núcleo',
+    caption:
+      'Escolares en uniforme deportivo sembrando y desyerbando camas de cultivo elevadas con borduras de guadua en la huerta escolar de la Sede Núcleo.',
+    yearOrPeriod: 'Fotografía de campo 2025 – 2026',
+    source: 'Registro fotográfico en huerta de Sede Núcleo',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía real del proyecto',
+    sede: 'Sede El Núcleo',
+    alt: 'Estudiantes con uniforme deportivo trabajando en las eras de cultivo delimitadas con guadua',
+  },
+  compostajeManosComunidad: {
+    id: 'media-compostaje-manos',
+    url: '/assets/archivo/compostaje-manos-comunidad.jpg',
+    title: 'Fotografía real: Taller práctico de compostaje y cobertura vegetal orgánica',
+    caption:
+      'Docente y estudiantes preparando la cama de siembra con acolchado de materia vegetal seca y composta orgánica en la huerta escolar agroecológica.',
+    yearOrPeriod: 'Fotografía de campo 2025',
+    source: 'Registro fotográfico en granja escolar',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía real del proyecto',
+    sede: 'Sede El Núcleo y Veredas',
+    alt: 'Plano picado de docente y niños colocando sus manos sobre el compost y cobertura de paja en la huerta',
+  },
+  filobonitoSenderoTapas: {
+    id: 'media-filobonito-sendero-tapas',
+    url: '/assets/archivo/filobonito-sendero-tapas-recicladas.jpg',
+    title: 'Fotografía real: Sendero ecológico con flores de tapas plásticas recicladas (Filobonito)',
+    caption:
+      'Comunidad y educadores recorriendo el sendero botánico de Filobonito decorado artesanalmente con flores formadas por tapas plásticas recicladas.',
+    yearOrPeriod: '15 de octubre de 2025',
+    source: 'Registro fotográfico en Sede Filobonito',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía real del proyecto',
+    sede: 'Sede Filobonito',
+    alt: 'Docentes y visitantes caminando por un sendero con mosaicos de flores hechas de tapas de botellas recicladas',
+  },
+  filobonitoSemanaPazManos: {
+    id: 'media-filobonito-semana-paz',
+    url: '/assets/archivo/filobonito-semana-paz-manos.jpg',
+    title: 'Fotografía real: Círculo de unión de manos en la Semana de la Paz (Filobonito)',
+    caption:
+      'Estudiantes de diversas edades uniendo sus manos en el centro como manifestación de afecto, solidaridad y paz comunitaria en el ámbito rural.',
+    yearOrPeriod: '27 de septiembre de 2025',
+    source: 'Registro fotográfico en Sede Filobonito',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía real del proyecto',
+    sede: 'Sede Filobonito',
+    alt: 'Manos entrelazadas de estudiantes en círculo sobre colchoneta durante la Semana de la Paz',
+  },
+  foroTerritoriosUtpCampesino: {
+    id: 'media-foro-territorios-utp',
+    url: '/assets/archivo/foro-territorios-utp-campesino.jpg',
+    title: 'Fotografía real: Encuentro en la UTP con atuendos tradicionales campesinos',
+    caption:
+      'Niños y docentes del corregimiento de Altagracia vistiendo ruanas, ponchos, sombreros aguadeños y faldas folclóricas en el auditorio de la Universidad Tecnológica de Pereira.',
+    yearOrPeriod: '30 de septiembre de 2025',
+    source: 'Registro fotográfico del Foro de Territorios de Paz (UTP)',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía real del proyecto',
+    sede: 'Todas las sedes',
+    alt: 'Estudiantes y profesoras con trajes campesinos tradicionales posando en el escenario del auditorio de la UTP',
+  },
+  canaveralCompartirNatural: {
+    id: 'media-canaveral-compartir-natural',
+    url: '/assets/archivo/canaveral-compartir-natural-corazones.jpg',
+    title: 'Fotografía real: Jornada comunitaria de afecto y naturaleza en Cañaveral',
+    caption:
+      'Escolares sentados sobre una manta en el prado de la Sede Cañaveral expresando gestos de corazón y compañerismo en torno al aprendizaje rural.',
+    yearOrPeriod: '30 de septiembre de 2025',
+    source: 'Registro de campo en Sede Cañaveral',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía real del proyecto',
+    sede: 'Sede Cañaveral',
+    alt: 'Grupo de niños de la escuela Cañaveral sentados en el césped haciendo señas de corazón con las manos',
   },
 };
 
@@ -109,36 +439,15 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
       },
     ],
     media: [
-      {
-        id: 'media-1940-minga-jpg',
-        url: '/assets/img/hito-1940-minga.jpg',
-        title: 'Recreación documental: Mingas de bahareque y acarreo de agua en guadua desde La Filipina',
-        caption:
-          'Niños campesinos acarreando agua en tarros de guadua desde la cañada La Filipina y familias levantando la primera escuela en bahareque y guadua en los años 1940.',
-        yearOrPeriod: '1940 – 1948',
-        source: 'Ilustración documental del proyecto basada en los relatos CAÑ-APJAC-21 y AGR-AMF-G.17',
-        isRealProjectAsset: true,
-        assetTypeLabel: 'Ilustración documental del proyecto',
-        sede: 'Sedes Cañaveral y El Agrado',
-        alt: 'Minga campesina levantando la escuela en bahareque y niños llevando agua en guadua',
-      },
-      {
-        id: 'media-1950-ladrillo-jpg',
-        url: '/assets/img/hito-1950-ladrillo.jpg',
-        title: 'Recreación histórica: Primera escuela en ladrillo y teja tras el sismo de 1949–1950',
-        caption:
-          'Edificación en ladrillo construida con apoyo del Comité de Cafeteros tras el paso transitorio por la Finca Remolinos de don Orlando Díaz y doña Virginia.',
-        yearOrPeriod: '1949 – 1950',
-        source: 'Ilustración documental del proyecto basada en el relato de Don Víctor Emilio Sánchez (AGR-APF-G16)',
-        isRealProjectAsset: true,
-        assetTypeLabel: 'Ilustración documental del proyecto',
-        sede: 'Sede El Agrado',
-        alt: 'Primera escuela rural en ladrillo y teja en las montañas cafeteras de Altagracia',
-      },
+      PROJECT_ARCHIVE_MEDIA.sedeCanaveralFachada,
+      PROJECT_ARCHIVE_MEDIA.sedeElAgradoFachada,
+      PROJECT_ARCHIVE_MEDIA.elAgradoCampanaMural,
+      PROJECT_ARCHIVE_MEDIA.infografiaHitosOriginal,
+      PROJECT_ARCHIVE_MEDIA.mapaAereoAltagracia,
       {
         id: 'media-1940-lamina',
         url: '/assets/ilustraciones/lamina-1940-mingas-bahareque.svg',
-        title: 'Esquema arquitectónico: Primeras escuelas de bahareque y mingas veredales',
+        title: 'Esquema arquitectónico de referencia: Primeras escuelas de bahareque y mingas veredales',
         caption:
           'Representación ilustrativa de las primeras aulas de bahareque blanqueadas con cal, zócalo color caoba y corredor de madera descritas en los testimonios orales de las veredas Cañaveral, Filobonito y El Estanquillo.',
         yearOrPeriod: '1940 – 1948',
@@ -148,8 +457,6 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
         sede: 'Sedes Cañaveral y El Agrado',
         alt: 'Ilustración documental de una escuela rural de bahareque con techo de teja y árbol patrimonial',
       },
-      PROJECT_ARCHIVE_MEDIA.infografiaHitosOriginal,
-      PROJECT_ARCHIVE_MEDIA.mapaAereoAltagracia,
     ],
     documentarySources: [
       'Anteproyecto de investigación: "La Escuela como Tejido de Memoria Comunitaria en la I.E. Gonzalo Mejía Echeverry" (Gañán Morales, UTP, 2026, Cap. 2).',
@@ -204,26 +511,20 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
       },
     ],
     media: [
-      {
-        id: 'media-1960-nucleo-jpg',
-        url: '/assets/img/hito-1960-nucleo.jpg',
-        title: 'Recreación documental: La Granja Vocacional Agrícola del Núcleo Escolar (1960)',
-        caption:
-          'Vista general de la Escuela Vocacional Agrícola del Núcleo Escolar de Altagracia creada por el Decreto 1240 de 1960, con su elba corrediza de café sobre rieles, huertas y el Jeep del Equipo de Campo.',
-        yearOrPeriod: '19 de mayo de 1960',
-        source: 'Ilustración documental del proyecto basada en el relato del Prof. Milton Guillermo (NUC-DOC-G09)',
-        isRealProjectAsset: true,
-        assetTypeLabel: 'Ilustración documental del proyecto',
-        sede: 'Sede El Núcleo y Veredas Satélites',
-        alt: 'Granja Vocacional Agrícola del Núcleo Escolar en 1960 con elba de café y Jeep del Equipo de Campo',
-      },
+      PROJECT_ARCHIVE_MEDIA.nucleoArchivoSiembraHistorica,
+      PROJECT_ARCHIVE_MEDIA.nucleoDocentesTrajeTipico,
+      PROJECT_ARCHIVE_MEDIA.nucleoGraduacionEscuelaNueva,
+      PROJECT_ARCHIVE_MEDIA.filobonitoIndependienteCarroza,
+      PROJECT_ARCHIVE_MEDIA.sedeNucleoQuiosco,
+      PROJECT_ARCHIVE_MEDIA.sedeFilobonitoFachada,
       PROJECT_ARCHIVE_MEDIA.mapaAereoAltagracia,
+      PROJECT_ARCHIVE_MEDIA.infografiaHitosOriginal,
       {
         id: 'media-1960-lamina',
         url: '/assets/ilustraciones/lamina-1960-nucleo-filobonito.svg',
         title: 'Lámina documental: Escuela Vocacional Agrícola El Núcleo y Sede Filobonito',
         caption:
-          'Recreación visual de la arquitectura escolar cafetera de los años sesenta y los cultivos de la granja escolar del Núcleo en el Paisaje Cultural Cafetero de Altagracia.',
+          'Recreación esquemática de la arquitectura escolar cafetera de los años sesenta y los cultivos de la granja escolar del Núcleo en el Paisaje Cultural Cafetero de Altagracia.',
         yearOrPeriod: 'Década de 1960',
         source: 'Lámina ilustrativa basada en Decreto 1240 de 1960 y entrevistas NUC-DOC-G.09 y FIL-DOC-G02',
         isRealProjectAsset: false,
@@ -231,7 +532,6 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
         sede: 'Sedes El Núcleo y Filobonito',
         alt: 'Ilustración de la escuela vocacional agrícola rodeada de cafetales y huerta escolar',
       },
-      PROJECT_ARCHIVE_MEDIA.infografiaHitosOriginal,
     ],
     documentarySources: [
       'Decreto Nacional 1240 del 19 de mayo de 1960 (Ministerio de Educación Nacional) y Escritura Pública 1171 del 24 de junio de 1959 (Notaría Segunda de Pereira).',
@@ -287,25 +587,17 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
       },
     ],
     media: [
-      {
-        id: 'media-1967-fundacion-jpg',
-        url: '/assets/img/hito-1967-fundacion.jpg',
-        title: 'Recreación documental: Fundación de 1967 y acarreo de piedra desde el río Cestillal',
-        caption:
-          'Estudiantes, docentes y líderes comunitarios subiendo piedra del río Cestillal y libros para consolidar el colegio en el casco central de Altagracia.',
-        yearOrPeriod: '1967 – Años 1980',
-        source: 'Ilustración documental del proyecto basada en los relatos NUC-MF-G.10 y PRI-DOC-G03',
-        isRealProjectAsset: true,
-        assetTypeLabel: 'Ilustración documental del proyecto',
-        sede: 'Sede Principal',
-        alt: 'Estudiantes y líderes comunitarios subiendo piedra del río Cestillal y libros para el colegio',
-      },
+      PROJECT_ARCHIVE_MEDIA.placaInauguracion1997,
+      PROJECT_ARCHIVE_MEDIA.vallaInstitucionalSedes,
+      PROJECT_ARCHIVE_MEDIA.foroTerritoriosUtpCampesino,
+      PROJECT_ARCHIVE_MEDIA.infografiaHitosOriginal,
+      PROJECT_ARCHIVE_MEDIA.mapaAereoAltagracia,
       {
         id: 'media-1967-lamina',
         url: '/assets/ilustraciones/lamina-1967-fundacion-principal.svg',
         title: 'Lámina documental: Ordenanza de 1967 y primera planta en el centro de Altagracia',
         caption:
-          'Ficha visual conmemorativa de la Ordenanza Departamental de 1967 y de las primeras instalaciones del colegio en el casco central del corregimiento de Altagracia.',
+          'Ficha conmemorativa esquemática de la Ordenanza Departamental de 1967 y de las primeras instalaciones del colegio en el casco central del corregimiento de Altagracia.',
         yearOrPeriod: '1967',
         source: 'Lámina ilustrativa basada en Gil y Vargas (2019), Anteproyecto UTP y entrevistas PRI-DOC-G03 y NUC-MF-G.10',
         isRealProjectAsset: false,
@@ -313,8 +605,6 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
         sede: 'Sede Principal',
         alt: 'Ilustración documental de la Ordenanza de 1967 y la fachada inicial del colegio en Altagracia',
       },
-      PROJECT_ARCHIVE_MEDIA.infografiaHitosOriginal,
-      PROJECT_ARCHIVE_MEDIA.mapaAereoAltagracia,
     ],
     documentarySources: [
       'Gil y Vargas (2019), citado en el Anteproyecto de investigación UTP (Gañán Morales, 2026, p. 17).',
@@ -333,7 +623,7 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
     sedes: ['Sede El Jazmín', 'Sede El Agrado'],
     verificationStatus: 'ejemplo',
     verificationNote:
-      'Contenido de ejemplo pendiente de validación documental: En la Tabla 2 del Anteproyecto UTP (2026), el año de creación de la Sede El Jazmín figura como «Sin registro aún». Se presenta aquí la reconstrucción oral preliminar para validación por parte de la comunidad.',
+      'Contenido en proceso de validación documental: En la Tabla 2 del Anteproyecto UTP (2026), el año de creación de la Sede El Jazmín figura como «Sin registro aún». Se presenta aquí la reconstrucción oral preliminar junto con los registros fotográficos en sede.',
     summary:
       'Reconstrucción preliminar en proceso de validación sobre la donación del predio de la Sede El Jazmín (c. 1965–1970), las antiguas sedes veredales hoy cerradas (Guadualito y Tinajas) y la llegada en 1970 de la maestra Amalia Rodríguez a El Agrado.',
     fullDescription: [
@@ -365,20 +655,22 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
       },
     ],
     media: [
+      PROJECT_ARCHIVE_MEDIA.sedeElJazminFachada,
+      PROJECT_ARCHIVE_MEDIA.elJazminEstudiantesRecreo,
+      PROJECT_ARCHIVE_MEDIA.infografiaHitosOriginal,
       {
         id: 'media-1970-jazmin-lamina',
         url: '/assets/ilustraciones/lamina-1968-jazmin-comunidad.svg',
         title: 'Ficha en validación: Sede El Jazmín y memoria de las sedes veredales',
         caption:
-          'Lámina de referencia para el registro en construcción de la Sede El Jazmín (cancha anexa y murales escolares). Marcada expresamente como contenido en validación documental.',
+          'Lámina esquemática de referencia para el registro en construcción de la Sede El Jazmín (cancha anexa y murales escolares).',
         yearOrPeriod: 'c. 1965 – 1970 (En validación)',
         source: 'Entrevista DOC-SJ-G21 y Tabla 2 del Anteproyecto UTP (2026)',
         isRealProjectAsset: false,
-        assetTypeLabel: 'Contenido de ejemplo / En validación documental',
+        assetTypeLabel: 'Lámina esquemática de referencia',
         sede: 'Sede El Jazmín',
-        alt: 'Ilustración de referencia de la Sede El Jazmín con su cancha contigua e indicación de registro en validación',
+        alt: 'Ilustración de referencia de la Sede El Jazmín con su cancha contigua',
       },
-      PROJECT_ARCHIVE_MEDIA.infografiaHitosOriginal,
     ],
     documentarySources: [
       'Tabla 2: Características generales de las sedes (Anteproyecto UTP, Gañán Morales, 2026, p. 17: Sede El Jazmín registrada como "Sin registro").',
@@ -432,17 +724,19 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
       },
     ],
     media: [
+      PROJECT_ARCHIVE_MEDIA.vallaInstitucionalSedes,
+      PROJECT_ARCHIVE_MEDIA.filobonitoIndependienteCarroza,
       PROJECT_ARCHIVE_MEDIA.mapaAereoAltagracia,
       {
         id: 'media-1995-lamina',
         url: '/assets/ilustraciones/lamina-1997-traslado-la-una.svg',
-        title: 'Lámina documental: Crecimiento estudiantil, deporte y vida comunitaria',
+        title: 'Lámina esquemática: Crecimiento estudiantil, deporte y vida comunitaria',
         caption:
-          'Ilustración de los espacios abiertos y deportivos que impulsaron los logros estudiantiles en los Juegos Intercolegiados y los encuentros de la Jornada Sabatina.',
+          'Esquema visual de los espacios abiertos y deportivos que impulsaron los logros estudiantiles en los Juegos Intercolegiados y los encuentros de la Jornada Sabatina.',
         yearOrPeriod: '1994 – 1996',
         source: 'Lámina ilustrativa basada en testimonios PRI-DOC-G03 y NUCPRI-DOC-G.14',
         isRealProjectAsset: false,
-        assetTypeLabel: 'Lámina documental ilustrativa (basada en archivo oral)',
+        assetTypeLabel: 'Lámina esquemática de referencia',
         sede: 'Sede Principal',
         alt: 'Ilustración de los corredores y patio central de la institución educativa',
       },
@@ -492,25 +786,17 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
       },
     ],
     media: [
-      {
-        id: 'media-1997-traslado-jpg',
-        url: '/assets/img/hito-1997-traslado.jpg',
-        title: 'Recreación histórica: La caravana estudiantil cargando las sillas hacia la vereda La Una (Sept. 1997)',
-        caption:
-          '«Muchachos, tomen las sillas, vamos para el colegio y vamos a estrenar»: la alegre romería estudiantil y docente por la carretera de Altagracia en septiembre de 1997.',
-        yearOrPeriod: 'Septiembre de 1997',
-        source: 'Ilustración documental del proyecto basada en los relatos PRI-DOC-G03 y PRI-DOC-G01',
-        isRealProjectAsset: true,
-        assetTypeLabel: 'Ilustración documental del proyecto',
-        sede: 'Sede Principal (Vereda La Una)',
-        alt: 'Caravana de estudiantes y profesores cargando sus sillas y pupitres hacia la nueva sede en la vereda La Una',
-      },
+      PROJECT_ARCHIVE_MEDIA.sedePrincipalPanoramicaArcoiris,
+      PROJECT_ARCHIVE_MEDIA.placaInauguracion1997,
+      PROJECT_ARCHIVE_MEDIA.sedePrincipalColiseoKiosco,
+      PROJECT_ARCHIVE_MEDIA.mapaAereoAltagracia,
+      PROJECT_ARCHIVE_MEDIA.infografiaHitosOriginal,
       {
         id: 'media-1997-lamina',
         url: '/assets/ilustraciones/lamina-1997-traslado-la-una.svg',
         title: 'Lámina documental: Campus de la Sede Principal en la vereda La Una (1997)',
         caption:
-          'Ilustración arquitectónica de los corredores en ladrillo, pórticos verdes y patio arbolado de la nueva Sede Principal inaugurada en septiembre de 1997 en la vereda La Una.',
+          'Ilustración arquitectónica de los corredores en ladrillo, pórticos verdes y patio arbolado de la Sede Principal inaugurada en 1997 en la vereda La Una.',
         yearOrPeriod: 'Septiembre de 1997',
         source: 'Lámina ilustrativa basada en testimonios PRI-DOC-G03 y Marco Contextual PEI',
         isRealProjectAsset: false,
@@ -518,8 +804,6 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
         sede: 'Sede Principal (Vereda La Una)',
         alt: 'Ilustración del patio central y corredores de la Sede Principal en la vereda La Una',
       },
-      PROJECT_ARCHIVE_MEDIA.mapaAereoAltagracia,
-      PROJECT_ARCHIVE_MEDIA.infografiaHitosOriginal,
     ],
     documentarySources: [
       'Anteproyecto de investigación UTP: "Hitos Históricos de las Sedes del Gonzalo Mejía Echeverry" (Gañán Morales, 2026, pp. 17–18).',
@@ -573,19 +857,10 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
       },
     ],
     media: [
-      {
-        id: 'media-1999-terremoto-jpg',
-        url: '/assets/img/hito-1999-terremoto.jpg',
-        title: 'Recreación simbólica: El terremoto del 25 de enero de 1999 y la reconstrucción escolar',
-        caption:
-          'Del colapso de los viejos muros en el sismo del 25 de enero de 1999 al renacimiento arquitectónico con el FOREC y la resiliencia comunitaria en Altagracia.',
-        yearOrPeriod: '25 de enero de 1999',
-        source: 'Ilustración documental del proyecto basada en los relatos NUC-DOC-G.09 y CAÑ-DOC-12',
-        isRealProjectAsset: true,
-        assetTypeLabel: 'Ilustración documental del proyecto',
-        sede: 'Todas las sedes',
-        alt: 'Contraste entre los muros colapsados en el terremoto de 1999 y la escuela reconstruida con siembra comunitaria',
-      },
+      PROJECT_ARCHIVE_MEDIA.pancartaResilienciaTerremoto,
+      PROJECT_ARCHIVE_MEDIA.sedeNucleoQuiosco,
+      PROJECT_ARCHIVE_MEDIA.sedeCanaveralFachada,
+      PROJECT_ARCHIVE_MEDIA.infografiaHitosOriginal,
       {
         id: 'media-1999-lamina',
         url: '/assets/ilustraciones/lamina-1999-sismo-reconstruccion.svg',
@@ -599,7 +874,6 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
         sede: 'Todas las sedes',
         alt: 'Ilustración comparativa de la afectación del sismo de 1999 y la reconstrucción de las escuelas rurales',
       },
-      PROJECT_ARCHIVE_MEDIA.infografiaHitosOriginal,
     ],
     documentarySources: [
       'Anteproyecto de investigación UTP: Sección 3.2 "Huellas del Tiempo: El terremoto de 1999" (Gañán Morales, 2026, pp. 27–28).',
@@ -647,25 +921,17 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
       },
     ],
     media: [
-      {
-        id: 'media-2012-capsula-jpg',
-        url: '/assets/img/hito-2012-capsula.jpg',
-        title: 'Recreación histórica: Fusión de las 6 sedes y la Cápsula del Tiempo (2012 → 2062)',
-        caption:
-          'Familias campesinas, abuelos y estudiantes depositando retratos y cartas en la Cápsula del Tiempo de Altagracia (2012–2013) para ser abierta en 50 años.',
-        yearOrPeriod: '2002 – 2017',
-        source: 'Ilustración documental del proyecto basada en el relato AGR-EAMF-G18 (María Angélica Ramírez)',
-        isRealProjectAsset: true,
-        assetTypeLabel: 'Ilustración documental del proyecto',
-        sede: 'Las 6 sedes de la institución',
-        alt: 'Abuelos, familias y estudiantes guardando fotografías y cartas en la Cápsula del Tiempo de Altagracia en 2012',
-      },
+      PROJECT_ARCHIVE_MEDIA.vallaInstitucionalSedes,
+      PROJECT_ARCHIVE_MEDIA.filobonitoIndependienteCarroza,
+      PROJECT_ARCHIVE_MEDIA.filobonitoSemanaPazManos,
+      PROJECT_ARCHIVE_MEDIA.mapaAereoAltagracia,
+      PROJECT_ARCHIVE_MEDIA.infografiaHitosOriginal,
       {
         id: 'media-2002-lamina',
         url: '/assets/ilustraciones/lamina-2002-fusion-sedes.svg',
         title: 'Cartografía institucional: Articulación de las 6 sedes de la I.E. Gonzalo Mejía Echeverry',
         caption:
-          'Diagrama de la red educativa conformada por la Sede Principal (Vereda La Una) y las cinco sedes de primaria anexas: El Núcleo, Filobonito, El Agrado, Cañaveral y El Jazmín.',
+          'Diagrama esquemático de la red educativa conformada por la Sede Principal (Vereda La Una) y las cinco sedes de primaria anexas: El Núcleo, Filobonito, El Agrado, Cañaveral y El Jazmín.',
         yearOrPeriod: '2002 – 2017',
         source: 'Lámina cartográfica basada en Tabla 2 y Figura 1 del Anteproyecto UTP (2026)',
         isRealProjectAsset: false,
@@ -673,8 +939,6 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
         sede: 'Las 6 sedes de la institución',
         alt: 'Diagrama de red que conecta la Sede Principal con las cinco sedes rurales del corregimiento de Altagracia',
       },
-      PROJECT_ARCHIVE_MEDIA.mapaAereoAltagracia,
-      PROJECT_ARCHIVE_MEDIA.infografiaHitosOriginal,
     ],
     documentarySources: [
       'Ley 715 de 2001 (Congreso de la República de Colombia) y Resoluciones de integración educativa (2002–2017).',
@@ -730,21 +994,17 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
       },
     ],
     media: [
-      {
-        id: 'media-2026-agroecologia-jpg',
-        url: '/assets/img/hito-2026-agroecologia.jpg',
-        title: 'Recreación contemporánea: Aula Viva Agroecológica, Escuela Audiovisual de Aves y Paneles Solares (2026)',
-        caption:
-          'Estudiantes y docentes en el aula viva agroecológica, avistamiento y fotografía de aves, jardines de polinizadores y coliseo con paneles solares en la I.E. Gonzalo Mejía Echeverry.',
-        yearOrPeriod: '2015 – 2026',
-        source: 'Ilustración documental del proyecto basada en los relatos PRI-DOC-G02 y PRI-EST-G08',
-        isRealProjectAsset: true,
-        assetTypeLabel: 'Ilustración documental del proyecto',
-        sede: 'Todas las sedes',
-        alt: 'Estudiantes fotografiando aves y cultivando en la Escuela Viva Agroecológica con paneles solares',
-      },
+      PROJECT_ARCHIVE_MEDIA.muralMapaVerde,
+      PROJECT_ARCHIVE_MEDIA.tallerJardinesPolinizadores,
+      PROJECT_ARCHIVE_MEDIA.canaveralAulasVivasClase,
+      PROJECT_ARCHIVE_MEDIA.nucleoHuertaEstudiantes,
+      PROJECT_ARCHIVE_MEDIA.compostajeManosComunidad,
+      PROJECT_ARCHIVE_MEDIA.filobonitoSenderoTapas,
+      PROJECT_ARCHIVE_MEDIA.canaveralCompartirNatural,
+      PROJECT_ARCHIVE_MEDIA.foroTerritoriosUtpCampesino,
       PROJECT_ARCHIVE_MEDIA.radicadoAnteproyectoUtp,
       PROJECT_ARCHIVE_MEDIA.mapaAereoAltagracia,
+      PROJECT_ARCHIVE_MEDIA.infografiaHitosOriginal,
       {
         id: 'media-2025-lamina',
         url: '/assets/ilustraciones/lamina-2015-agroecologia-memoria.svg',
@@ -758,7 +1018,6 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
         sede: 'Todas las sedes',
         alt: 'Lámina con los tres pilares actuales: PEI Agroecológico, Innovación e Inclusión, y Tejido de Memoria',
       },
-      PROJECT_ARCHIVE_MEDIA.infografiaHitosOriginal,
     ],
     documentarySources: [
       'Anteproyecto de investigación: "La Escuela como Tejido de Memoria Comunitaria en la Institución Educativa Gonzalo Mejía Echeverry del Corregimiento de Altagracia, Pereira" (Cristina Yaneth Gañán Morales; Asesora: Dra. Claudia Viviana Hurtado Loaiza, UTP, 9 de febrero de 2026).',
@@ -772,6 +1031,7 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
 /**
  * Información estructurada de las 6 sedes que conforman la institución
  * (basada en la Tabla 2 del Anteproyecto UTP y las entrevistas de campo).
+ * Cada sede cuenta con su fotografía real en alta definición.
  */
 export const SEDES_DATA: SedeInfo[] = [
   {
@@ -781,6 +1041,8 @@ export const SEDES_DATA: SedeInfo[] = [
     grades: 'Básica secundaria (6.° a 9.°), media técnica agropecuaria (10.° y 11.°) y Jornada Sabatina (Programa 3011)',
     model: 'Gradual tradicional con transversalidad agroecológica',
     creationYear: '1967 (Traslado a La Una en 1997)',
+    image: '/assets/sedes/sede-principal.jpg',
+    imageAlt: 'Vista panorámica elevada de la Sede Principal en la vereda La Una con arcoíris en el horizonte',
     description:
       'Centro administrativo y académico de secundaria y media del corregimiento. Fundada en 1967 en el casco central de Altagracia y trasladada en septiembre de 1997 a un amplio campus campestre en la vereda La Una.',
     highlights: [
@@ -796,6 +1058,8 @@ export const SEDES_DATA: SedeInfo[] = [
     grades: 'Preescolar y básica primaria (0.° a 5.°)',
     model: 'Gradual tradicional',
     creationYear: '19 de mayo de 1960 (Decreto 1240)',
+    image: '/assets/sedes/sede-nucleo.jpg',
+    imageAlt: 'Kiosco techado y jardines verdes de la Sede Núcleo Escolar Altagracia (Primaria)',
     description:
       'Creada oficialmente como escuela vocacional agrícola en 1960 sobre un predio adquirido en 1959. Durante más de cuatro décadas fue referente regional por su granja integral y su Equipo de Campo itinerante.',
     highlights: [
@@ -811,6 +1075,8 @@ export const SEDES_DATA: SedeInfo[] = [
     grades: 'Preescolar y básica primaria',
     model: 'Escuela Nueva ("Aulas Vivas")',
     creationYear: 'Década de 1940* (más de 80 años)',
+    image: '/assets/sedes/sede-canaveral.jpg',
+    imageAlt: 'Corredor campesino y cancha múltiple de la Sede Cañaveral',
     description:
       'Levantada por la comunidad en lote donado por don Pedro Patiño mediante mingas, bazares y convites dominicales. Reconstruida tras el terremoto de 1999 y pintada con los colores tradicionales campesinos.',
     highlights: [
@@ -826,6 +1092,8 @@ export const SEDES_DATA: SedeInfo[] = [
     grades: 'Preescolar y básica primaria',
     model: 'Escuela Nueva',
     creationYear: 'Década de 1960*',
+    image: '/assets/sedes/sede-filobonito.jpg',
+    imageAlt: 'Fachada con flores y cancha de la Sede Filobonito desde la carretera veredal',
     description:
       'Tras el riesgo de derrumbes en su primera casita de bahareque, don Pío Durán donó el predio actual donde el Comité de Cafeteros edificó la escuela en material. Se integró al colegio central hacia 2012.',
     highlights: [
@@ -841,6 +1109,8 @@ export const SEDES_DATA: SedeInfo[] = [
     grades: 'Preescolar, primera infancia y básica primaria',
     model: 'Escuela Nueva',
     creationYear: 'Hacia 1948*',
+    image: '/assets/sedes/sede-el-agrado.jpg',
+    imageAlt: 'Fachada en blanco y azul y cancha polideportiva de la Sede El Agrado en El Estanquillo',
     description:
       'La sede más distante del corregimiento. Nació en un terreno donado por la familia Rangel Trujillo, pasó por la finca prestada de don Orlando Díaz y doña Virginia, y fue edificada en ladrillo con el Comité de Cafeteros.',
     highlights: [
@@ -856,6 +1126,8 @@ export const SEDES_DATA: SedeInfo[] = [
     grades: 'Preescolar y básica primaria (con aula de inclusión)',
     model: 'Escuela Nueva e inclusión educativa',
     creationYear: 'c. 1965 – 1970* (Sin registro escrito en Tabla 2; en validación oral)',
+    image: '/assets/sedes/sede-el-jazmin.jpg',
+    imageAlt: 'Fachada en amarillo y azul, murales y cancha múltiple de la Sede El Jazmín',
     description:
       'Ubicada junto a la cancha de la vereda en un predio donado según la memoria oral por una familia residente en Estados Unidos. Llegó a contar con 250 alumnos bajo la dirección de la maestra Lucilia.',
     highlights: [

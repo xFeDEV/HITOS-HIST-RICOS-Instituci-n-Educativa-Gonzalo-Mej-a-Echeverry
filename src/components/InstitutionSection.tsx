@@ -157,50 +157,75 @@ export const InstitutionSection: React.FC<InstitutionSectionProps> = ({
               return (
                 <div
                   key={sede.id}
-                  className="rounded-xl border border-[#B5AE9E] bg-[#FAF7F0] p-4 sm:p-5 flex flex-col justify-between hover:border-[#C59B38] transition-all shadow-2xs"
+                  className="rounded-xl border border-[#B5AE9E] bg-[#FAF7F0] overflow-hidden flex flex-col justify-between hover:border-[#C59B38] transition-all shadow-2xs group"
                 >
-                  <div>
-                    <div className="flex items-center justify-between gap-2 text-xs text-[#5A625C] mb-1.5">
-                      <span className="font-semibold text-[#113826] bg-[#113826]/10 px-2.5 py-0.5 rounded">
-                        {sede.vereda}
-                      </span>
-                      <span className="text-[11px] font-medium text-[#9E7820]">
-                        {sede.model}
-                      </span>
+                  {sede.image && (
+                    <div className="relative h-44 w-full overflow-hidden bg-[#EAE3D2] border-b border-[#DCD5C3]">
+                      <img
+                        src={sede.image}
+                        alt={sede.imageAlt || sede.name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                      />
+                      <div className="absolute top-2.5 left-2.5">
+                        <span className="font-semibold text-[#FAF7F0] bg-[#113826]/85 backdrop-blur-xs px-2.5 py-0.5 rounded text-[11px] shadow-xs">
+                          {sede.vereda}
+                        </span>
+                      </div>
+                      <div className="absolute bottom-2 right-2.5">
+                        <span className="text-[10.5px] font-medium bg-[#FAF7F0]/90 text-[#7A5910] border border-[#C59B38]/50 px-2 py-0.5 rounded backdrop-blur-xs shadow-xs">
+                          {sede.model}
+                        </span>
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between">
+                    <div>
+                      {!sede.image && (
+                        <div className="flex items-center justify-between gap-2 text-xs text-[#5A625C] mb-1.5">
+                          <span className="font-semibold text-[#113826] bg-[#113826]/10 px-2.5 py-0.5 rounded">
+                            {sede.vereda}
+                          </span>
+                          <span className="text-[11px] font-medium text-[#9E7820]">
+                            {sede.model}
+                          </span>
+                        </div>
+                      )}
+
+                      <h4 className="font-serif-display text-lg font-bold text-[#113826]">
+                        {sede.name}
+                      </h4>
+                      <p className="mt-0.5 text-xs font-semibold text-[#4A524C]">
+                        Creación: {sede.creationYear}
+                      </p>
+                      <p className="mt-2 text-xs sm:text-sm text-[#2B3930] leading-relaxed">
+                        {sede.description}
+                      </p>
+
+                      <ul className="mt-3 space-y-1 text-xs text-[#3D4A41]">
+                        {sede.highlights.map((hl, i) => (
+                          <li key={i} className="flex items-start gap-1.5">
+                            <span className="text-[#C59B38] font-bold">•</span>
+                            <span>{hl}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
 
-                    <h4 className="font-serif-display text-lg font-bold text-[#113826]">
-                      {sede.name}
-                    </h4>
-                    <p className="mt-0.5 text-xs font-semibold text-[#4A524C]">
-                      Creación: {sede.creationYear}
-                    </p>
-                    <p className="mt-2 text-xs sm:text-sm text-[#2B3930] leading-relaxed">
-                      {sede.description}
-                    </p>
-
-                    <ul className="mt-3 space-y-1 text-xs text-[#3D4A41]">
-                      {sede.highlights.map((hl, i) => (
-                        <li key={i} className="flex items-start gap-1.5">
-                          <span className="text-[#C59B38] font-bold">•</span>
-                          <span>{hl}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="mt-4 pt-3 border-t border-[#DCD5C3] flex items-center justify-between">
-                    <span className="text-[11px] text-[#5A625C] truncate max-w-[180px]">
-                      {sede.grades}
-                    </span>
-                    <button
-                      type="button"
-                      onClick={() => onFilterBySede(shortSedeFilterName)}
-                      className="inline-flex items-center gap-1 text-xs font-bold text-[#113826] hover:text-[#9E7820] cursor-pointer"
-                    >
-                      <span>Filtrar hitos</span>
-                      <ArrowUpRight className="w-3.5 h-3.5" />
-                    </button>
+                    <div className="mt-4 pt-3 border-t border-[#DCD5C3] flex items-center justify-between">
+                      <span className="text-[11px] text-[#5A625C] truncate max-w-[180px]">
+                        {sede.grades}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => onFilterBySede(shortSedeFilterName)}
+                        className="inline-flex items-center gap-1 text-xs font-bold text-[#113826] hover:text-[#9E7820] cursor-pointer"
+                      >
+                        <span>Filtrar hitos</span>
+                        <ArrowUpRight className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
                   </div>
                 </div>
               );

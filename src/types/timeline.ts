@@ -69,4 +69,7 @@ export interface SedeInfo {
   creationYear: string;
   description: string;
   highlights: string[];
+  /** Fotografía real de la sede */
+  image?: string;
+  imageAlt?: string;
 }

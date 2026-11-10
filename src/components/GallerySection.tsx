@@ -82,6 +82,15 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
     [filteredItems]
   );
 
+  const realCount = useMemo(
+    () => galleryItems.filter((i) => i.media.isRealProjectAsset).length,
+    [galleryItems]
+  );
+  const laminasCount = useMemo(
+    () => galleryItems.filter((i) => !i.media.isRealProjectAsset).length,
+    [galleryItems]
+  );
+
   return (
     <section
       id="galeria"
@@ -137,7 +146,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
               }`}
             >
               <CheckCircle2 className="w-3.5 h-3.5 text-[#C59B38]" />
-              <span>Archivos reales del proyecto (3)</span>
+              <span>Archivos reales del proyecto ({realCount})</span>
             </button>
             <button
               type="button"
@@ -150,7 +159,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
               }`}
             >
               <Layers className="w-3.5 h-3.5 text-[#9E7820]" />
-              <span>Láminas de reconstrucción oral ({galleryItems.length - 3})</span>
+              <span>Láminas esquemáticas ({laminasCount})</span>
             </button>
           </div>
         </div>
