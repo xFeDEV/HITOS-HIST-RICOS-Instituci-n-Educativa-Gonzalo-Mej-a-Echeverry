@@ -176,11 +176,23 @@ export const FullStoryModal: React.FC<FullStoryModalProps> = ({
             </div>
           </div>
 
-          {/* Full Narrative Paragraphs */}
+          {/* Full Narrative Paragraphs / Draft indicator */}
           <div className="space-y-4 font-serif-editorial text-[16px] sm:text-[17.5px] text-[#1F2F25] leading-relaxed">
-            {milestone.fullDescription.map((paragraph, idx) => (
-              <p key={idx}>{paragraph}</p>
-            ))}
+            {milestone.fullDescription.map((paragraph, idx) => {
+              const isDraft = paragraph.trim().toLowerCase() === 'borrador';
+              if (isDraft) {
+                return (
+                  <div
+                    key={idx}
+                    className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-[#C59B38]/15 border border-[#C59B38]/50 text-[#6E4F0B] font-sans font-semibold text-xs tracking-wider uppercase"
+                  >
+                    <FileText className="w-3.5 h-3.5 text-[#8C640E]" aria-hidden="true" />
+                    <span>Borrador</span>
+                  </div>
+                );
+              }
+              return <p key={idx}>{paragraph}</p>;
+            })}
           </div>
 
           {/* Key Historical Facts */}

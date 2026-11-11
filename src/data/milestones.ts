@@ -430,10 +430,7 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
     summary:
       'Las familias campesinas de Cañaveral y El Estanquillo impulsan las primeras escuelas en casas de bahareque y fincas prestadas, levantando aulas mediante convites, bazares dominicales y el acarreo de agua desde la cañada La Filipina.',
     fullDescription: [
-      'Antes de la intervención estatal formal, la educación rural en el corregimiento de Altagracia nació de la voluntad colectiva de las familias campesinas. En la vereda Cañaveral —cuya escuela suma más de ochenta años de existencia según la edad de sus árboles y de sus antiguos egresados—, la primera aula funcionaba en una casa vieja de bahareque. Ante su deterioro, jóvenes y líderes de la Junta de Acción Comunal acudieron a la Alcaldía de Pereira, que condicionó la obra a la posesión de un lote propio.',
-      'El vecino Pedro Patiño donó el terreno en Cañaveral y toda la vereda se organizó en mingas comunitarias los sábados y domingos: vendían fritangas, empanadas y arroz con leche, realizaban obras de teatro y bailaban cumbia, bambuco, pasodoble y galerón para financiar los materiales, mientras hombres y mujeres trabajaban con palas y recatones para levantar los dos bloques escolares.',
-      'De manera paralela, hacia 1948 en la vereda El Estanquillo —la más distante del corregimiento—, los niños debían caminar inicialmente hasta El Retiro. Tras la donación de un lote por la familia Rangel Trujillo, se abrieron clases en una casita de bahareque con piso de tierra y sin acueducto: los escolares cargaban el agua desde la cañada "La Filipina" en tarros de guadua con un trapito para que la primera maestra pudiera cocinar y asear la escuela.',
-      'Cuando un fuerte temblor y vendaval entre 1949 y 1950 afectó el rancho de bahareque en El Agrado, don Orlando Díaz y doña Virginia prestaron temporalmente su finca (Remolinos / Marzula) para no interrumpir las clases, mientras el inspector Benjamín Grisales y la comunidad gestionaban ante el Comité de Cafeteros la edificación de las primeras aulas en ladrillo y cemento de toda la zona.',
+      'Borrador',
     ],
     keyFacts: [
       'Donación de terrenos por vecinos: Pedro Patiño en la vereda Cañaveral y la familia Rangel Trujillo en la vereda El Estanquillo (Sede El Agrado).',
@@ -502,10 +499,7 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
     summary:
       'El Decreto 1240 del 19 de mayo de 1960 crea oficialmente el Núcleo Escolar de Altagracia como escuela vocacional agrícola con granja productiva y Equipo de Campo. En esa misma década, don Pío Durán dona el lote de Filobonito y el Comité de Cafeteros edifica su sede en material.',
     fullDescription: [
-      'El 19 de mayo de 1960, mediante el Decreto Nacional 1240 expedido bajo la presidencia de Alberto Lleras Camargo y el ministro de Educación Abel Villegas Naranjo, nació oficialmente el Núcleo Escolar Rural de Altagracia como escuela vocacional agrícola. Se levantó sobre un predio adquirido mediante la Escritura Pública 1171 del 24 de junio de 1959 en la Notaría Segunda de Pereira, convirtiéndose en uno de los tres únicos núcleos escolares rurales de Risaralda (junto con Santa Rosa de Cabal y Quinchía).',
-      'Durante más de cuatro décadas de autonomía administrativa y presupuestal, el Núcleo funcionó como una granja integral de aprendizaje y producción comunitaria: contaba con cultivos de café (con tanque de fermentación y elba de techo corredizo), cítricos, plátano, huerta escolar, ganado lechero, porquerizas, galpones de gallinas alimentadas con ramio, conejeras y estanques de peces alimentados con bore. Lo cosechado se comercializaba a precios solidarios entre las familias del corregimiento.',
-      'Además de su planta interna (director, pagador/tesorero, mayordomo, obreros agrícolas y docentes por grado), el Núcleo irradiaba bienestar a todas las veredas mediante su célebre "Equipo de Campo", que se desplazaba en un Jeep institucional según un cronograma semanal: contaba con Mejoradora de Salud (con consultorio odontológico gratuito), Mejoradora de Hogar, Profesor de Talleres de Carpintería (donde niños y padres fabricaban muebles en palo de café soqueado y guaduilla), Alfabetizador y Experto Agrícola.',
-      'En esta misma década de 1960 se consolidó la Sede Filobonito. Su primera escuela de bahareque —ubicada donde hoy funciona la fonda El Paraíso y donde se estudiaba a la luz de la vela— corría peligro por derrumbes en la vía. El vecino don Pío Durán donó el nuevo terreno y la Federación Nacional de Cafeteros (Comité de Cafeteros) construyó la planta física en material, acompañada por el liderazgo comunitario de figuras como doña Romelia Marín y la familia Gutiérrez.',
+      'Borrador',
     ],
     keyFacts: [
       'Escritura Pública 1171 del 24 de junio de 1959 (Notaría Segunda de Pereira) y Decreto 1240 del 19 de mayo de 1960 que crea el Núcleo Escolar de Altagracia.',
@@ -578,10 +572,7 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
     summary:
       'En 1967 la Asamblea Departamental aprueba la ordenanza que da vida oficial al colegio en la zona central de Altagracia para ofrecer educación secundaria a los jóvenes egresados de las escuelas veredales.',
     fullDescription: [
-      'Hacia el año 1967, la Asamblea Departamental aprobó la ordenanza oficial de creación del colegio de bachillerato del corregimiento, respondiendo a la urgente necesidad de ofrecer educación secundaria y media a los jóvenes que terminaban la primaria en las escuelas veredales de Altagracia y no contaban con recursos para desplazarse hasta la zona urbana de Pereira.',
-      'El establecimiento recibió el nombre de Gonzalo Mejía Echeverry en homenaje al concejal, periodista y dirigente cívico pereirano cuyas gestiones en las deliberaciones departamentales y el aporte de terrenos impulsaron la fundación del plantel, decisión respaldada por las juntas comunales y líderes del corregimiento.',
-      'En sus primeras décadas, la Sede Principal recorrió dos ubicaciones en el casco urbano de Altagracia antes de su emplazamiento actual: inició labores en la edificación donde funcionaba la antigua Corregiduría e Inspección de Policía (en cuyos bajos operaba Telecom) y posteriormente pasó al sector de La Virgen —donde hoy se encuentra el Puesto de Salud—, en un lote donado por don Roberto Giraldo.',
-      'La construcción de aquella sede en el sector de La Virgen quedó grabada en la memoria comunitaria porque los propios estudiantes bajaban en fila hasta el río Cestillal para acarrear piedra y arena. Allí el colegio creció desde los primeros grados de secundaria hasta gestionar en Bogotá su Personería Jurídica bajo el liderazgo del rector Armando Hoyos Valencia y la presidenta de la Asociación de Padres de Familia, doña Ana Rita Ramírez.',
+      'Borrador',
     ],
     keyFacts: [
       'Creación oficial en 1967 mediante Ordenanza Departamental (rumbo a sus 60 años de vida institucional en 2027).',
@@ -653,10 +644,7 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
     summary:
       'Reconstrucción preliminar en proceso de validación sobre la donación del predio de la Sede El Jazmín (c. 1965–1970), las antiguas sedes veredales hoy cerradas (Guadualito y Tinajas) y la llegada en 1970 de la maestra Amalia Rodríguez a El Agrado.',
     fullDescription: [
-      'Dentro del proceso investigativo de recuperación de la memoria colectiva, algunos hitos cuentan con testimonios orales preliminares que aún se encuentran en fase de contrastación documental. En el documento base del anteproyecto (Tabla 2), la Sede El Jazmín aparece registrada bajo el estado "Sin registro aún" en cuanto a su fecha exacta de fundación escrita.',
-      'No obstante, las entrevistas realizadas en campo (DOC-SJ-G21) recogen el relato oral conservado por vecinas históricas como doña Alba: hacia finales de la década de 1960 (c. 1965–1970), una familia propietaria de la finca que residía en los Estados Unidos donó el terreno tanto para la escuela de El Jazmín como para su cancha adjunta. En su época de mayor auge, bajo la dirección de la recordada profesora Lucilia y tres docentes más, la escuela llegó a albergar hasta 250 niños y niñas.',
-      'Por su parte, en el año 1970 se registra un hito verificado en la Sede El Agrado: la llegada de la docente Amalia Rodríguez, quien permaneció cerca de cuatro décadas (hasta su retiro entre 2012 y 2015) educando a tres y cuatro generaciones de familias de El Estanquillo. Junto a la profesora Luz Alba Ríos, gestionó ante el Comité de Cafeteros la pavimentación de la cancha de baloncesto, el parque infantil, el cerramiento escolar y el muro de contención levantado en convites nocturnos liderados por don Orlando Díaz.',
-      'Asimismo, los relatos orales dejan constancia de antiguas sedes rurales que hicieron parte del tejido educativo de Altagracia y que posteriormente fueron cerradas por transición demográfica, como la Sede Guadualito (antigua Sede 3) y la escuela de Tinajas, cuyos archivos históricos permanecen abiertos a la aportación de documentos y fotografías por parte de la comunidad.',
+      'Borrador',
     ],
     keyFacts: [
       'Estado documental en el Anteproyecto UTP (Tabla 2): Sede El Jazmín figura como «Sin registro» escrito, en proceso de validación mediante historia oral.',
@@ -716,9 +704,7 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
     summary:
       'A mediados de los años noventa la institución consolida su liderazgo deportivo en los Juegos Intercolegiados (1995) y abre el Bachillerato Sabatino (Programa 3011) gracias a cinco años de trabajo voluntario de sus docentes.',
     fullDescription: [
-      'La década de 1990 estuvo marcada por logros pedagógicos, deportivos y comunitarios que fortalecieron el orgullo de pertenecer a la Institución Educativa Gonzalo Mejía Echeverry. En 1994, con la llegada del licenciado en Educación Física Luis Fernando Orozco, el colegio inscribió por primera vez a sus equipos en los Juegos Intercolegiados. Tras superar el temor inicial a competir fuera del corregimiento, desde 1995 la institución empezó a cosechar títulos continuos hasta ser reconocida en todo el municipio.',
-      'En esa misma época (hacia 1996), los docentes Isabel Cristina Álvarez Morales y Milton Guillermo identificaron que numerosos jóvenes y adultos trabajadores del campo no podían culminar su bachillerato en la jornada diurna. Ambos maestros fundaron la Jornada Sabatina (Educación Formal de Adultos – Decreto 3011) trabajando durante cinco años de manera completamente gratuita y voluntaria los días sábados.',
-      'Gracias a esa gesta docente, cientos de habitantes, madres de familia y líderes comunales de Altagracia se graduaron como bachilleres y accedieron a cursos complementarios con el SENA en gastronomía, contabilidad, sistemas y bisutería. Paralelamente, las sedes brillaban en las Fiestas de la Cosecha y el Desfile de la Identidad con su banda músico-marcial y las recordadas revistas gimnásticas de la Sede El Agrado.',
+      'Borrador',
     ],
     keyFacts: [
       '1994 – 1995: Primera participación y despegue histórico de la institución en los Juegos Intercolegiados bajo la guía del docente Luis Fernando Orozco.',
@@ -784,10 +770,7 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
     summary:
       'Ante el crecimiento de la población estudiantil, entre 1994 y septiembre de 1997 se gestiona y ocupa la nueva planta física de la Sede Principal en la vereda La Una, dotando al colegio de amplias zonas verdes, coliseo, laboratorios y granja.',
     fullDescription: [
-      'Para comienzos de la década de 1990, la antigua sede ubicada en el sector central de La Virgen resultaba insuficiente para albergar a los cerca de 240 estudiantes de bachillerato. El plantel carecía de zonas recreativas, laboratorios, salas de cómputo y terrenos para prácticas agrícolas. En 1994 existían únicamente las primeras columnas levantadas en un lote enmontado en la vereda La Una.',
-      'Gracias a la gestión del rector magíster Armando Hoyos Valencia, el Consejo Directivo, la Asociación de Padres de Familia liderada por doña Ana Rita Ramírez y la Alcaldía de Pereira (bajo la administración de Juan Manuel Arango y con cofinanciación de Findeter), la obra se concluyó en 1997.',
-      'En septiembre de 1997 se produjo el histórico traslado: ante el llamado urgente de la Secretaría de Educación para ocupar de inmediato el nuevo plantel ("porque si ustedes no la toman, hay otra institución de Pereira que sí la toma"), los docentes y los propios estudiantes cargaron sus sillas y pupitres desde el colegio antiguo hasta la vereda La Una para estrenar la sede.',
-      'El nuevo campus transformó la calidad educativa del corregimiento al ofrecer una planta amplia rodeada de naturaleza, con coliseo cubierto múltiple, dos canchas deportivas, laboratorios, salas de sistemas, restaurante escolar, sendero ecológico con guadual y espacio para la huerta y la granja agroecológica.',
+      'Borrador',
     ],
     keyFacts: [
       '1994: Inicio de adecuaciones sobre la estructura inconclusa en el predio de la vereda La Una.',
@@ -849,9 +832,7 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
     summary:
       'El sismo del 25 de enero de 1999 impacta severamente la infraestructura de las sedes —destruyendo la mitad del Núcleo Escolar y colapsando aulas en Cañaveral—, dando paso a la reconstrucción con el FOREC y la resiliencia comunitaria.',
     fullDescription: [
-      'En la memoria colectiva del corregimiento de Altagracia, el terremoto del lunes 25 de enero de 1999 (1:19 p. m.) actúa como un punto de quiebre ontológico que reorganizó el espacio escolar y la vida comunitaria. Aquel lunes estaba previsto el regreso de los niños a clases, pero el viernes anterior los docentes del Núcleo habían acordado postergar el ingreso estudiantil, decisión providencial que evitó una tragedia humana.',
-      'En la Sede Núcleo Escolar, mientras los maestros se encontraban reunidos en la cocina al mediodía, el sismo sacudió el tanque elevado de mil litros y derribó prácticamente la mitad de la planta física (el bloque antiguo de salones con jardines interiores y la vieja Aula Máxima). La posterior intervención del Fondo para la Reconstrucción del Eje Cafetero (FOREC) permitió levantar un bloque moderno con unidades sanitarias y restaurante escolar independiente.',
-      'En la Sede Cañaveral, el movimiento telúrico destruyó la vieja edificación y obligó a su reconstrucción total, siendo posteriormente embellecida con los colores tradicionales campesinos. En la memoria de muchos habitantes del centro de Altagracia, las grietas que el sismo dejó en el antiguo local de La Virgen terminaron por sellar definitivamente el arraigo del colegio en la nueva sede de la vereda La Una.',
+      'Borrador',
     ],
     keyFacts: [
       '25 de enero de 1999 (1:19 p. m.): El aplazamiento del ingreso de los estudiantes acordado el viernes previo salvó a los niños del colapso de las aulas en el Núcleo Escolar.',
@@ -919,10 +900,7 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
     summary:
       'En cumplimiento de la Ley 715 de 2001, las escuelas rurales independientes se integran gradualmente al colegio central Gonzalo Mejía Echeverry entre 2002 y 2017, en un proceso marcado por la defensa comunitaria de las sedes y la articulación de un PEI común.',
     fullDescription: [
-      'A partir de la expedición de la Ley 715 de 2001, el Ministerio de Educación Nacional ordenó integrar las escuelas primarias rurales a los colegios centrales de bachillerato para conformar instituciones educativas unificadas. En Altagracia, este proceso transformó profundamente la administración y la vida cotidiana de las sedes veredales entre 2002 y 2017.',
-      'El primer hito ocurrió en la Sede Núcleo Escolar en octubre de 2002. Dado que el Núcleo contaba con recursos propios de la Nación, director autónomo y Equipo de Campo, docentes y familias se movilizaron, recogieron firmas y acudieron a la Alcaldía y a la Secretaría de Educación, logrando detener la medida durante casi dos años antes de que la resolución oficial consumara la fusión.',
-      'Posteriormente se integraron las demás escuelas bajo el modelo de Escuela Nueva: Filobonito hacia 2012 (donde en 2005 la comunidad ya había defendido exitosamente la permanencia de la docente Martha Montoya y donde luego se construyeron la sala de sistemas, el restaurante y la biblioteca escolar); El Agrado entre 2012 y 2013 (tras mesas de concertación lideradas por la presidenta de la JAC, María Angélica Ramírez, el rector don Uriel y las docentes para mantenerse unidos a Altagracia y no pasar a El Retiro); El Jazmín tras la pensión de su directora Lucilia; y Cañaveral hacia 2016–2017.',
-      'En medio de esta etapa de articulación (2012–2013), durante las fiestas aniversarias del corregimiento, la comunidad educativa y los abuelos de las veredas depositaron cartas, fotografías y relatos en una "Cápsula del Tiempo" enterrada en la entrada de la Sede Principal, con el compromiso de ser abierta cincuenta años después (hacia 2062).',
+      'Borrador',
     ],
     keyFacts: [
       'Octubre de 2002: Resolución de fusión del Núcleo Escolar con la Sede Principal tras movilización comunitaria de resistencia.',
@@ -987,10 +965,7 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
     summary:
       'Entre 2015 y 2026 la institución consolida su PEI Agroecológico y Sistema Agrocafetalero acompañado por la UTP, impulsa las Aulas Vivas, la energía solar, la inclusión educativa y el proyecto etnográfico de recuperación de su memoria histórica.',
     fullDescription: [
-      'En la última década (2015–2026), la Institución Educativa Gonzalo Mejía Echeverry ha protagonizado una profunda renovación pedagógica, ambiental y tecnológica. Acompañada por la Universidad Tecnológica de Pereira (UTP) y el grupo Territorios de Paz, en 2024 reestructuró su Proyecto Educativo Institucional (PEI) para situar la Agroecología y el Sistema Agrocafetalero como eje transversal de las 13 áreas del conocimiento en las seis sedes, desde preescolar hasta la media técnica.',
-      'Este enfoque florece en proyectos concretos: en la Sede Principal, la Escuela Audiovisual Agroecológica (liderada por los docentes Diana María Gil y Juan David Ramírez) integra fotografía de naturaleza, rescate de plantas medicinales y culinaria ancestral, mientras el campus suma paneles solares en el coliseo que alimentan un aula de ciencia con impresora 3D y tablero digital. En las sedes Cañaveral, Filobonito y El Jazmín destacan las "Aulas Vivas", la Biblioteca de Semillas, el Semillero de Hormigas, los Jardines y Hoteles de Polinizadores (junto a la fundación Ceiba Verde) y el cuaderno institucional "El Conejo Gonzalito".',
-      'Asimismo, la institución ha fortalecido la inclusión educativa (atendiendo en El Jazmín y en la Jornada Sabatina a estudiantes en condición de discapacidad de la Fundación Renovar Ser), ha garantizado planta docente y mantenimiento completos desde el mes de enero, y ha reactivado con instrumentos nuevos su Banda Músico-Marcial y el tradicional Desfile de la Identidad en las fiestas de Altagracia.',
-      'Como corolario de este proceso, entre 2025 y 2026 se desarrolla la investigación etnográfica "La Escuela como Tejido de Memoria Comunitaria" (Licenciatura en Etnoeducación UTP, realizada por Cristina Yaneth Gañán Morales bajo la asesoría de la Dra. Claudia Viviana Hurtado Loaiza), de la cual nace este archivo interactivo para preservar las voces de quienes han construido la escuela rural.',
+      'Borrador',
     ],
     keyFacts: [
       '2024: Actualización oficial del PEI con enfoque en Agroecología y Sistema Agrocafetalero transversal a las 6 sedes, en alianza con la UTP.',
