@@ -9,7 +9,6 @@ import { TimelineSection } from './components/TimelineSection';
 import { MilestoneDetailPanel } from './components/MilestoneDetailPanel';
 import { TimeRangeControl } from './components/TimeRangeControl';
 import { VocesMaestrosLideresSection } from './components/VocesMaestrosLideresSection';
-import { GallerySection } from './components/GallerySection';
 import { InstitutionSection } from './components/InstitutionSection';
 import { FullStoryModal } from './components/FullStoryModal';
 import { MediaLightboxModal } from './components/MediaLightboxModal';
@@ -207,8 +206,6 @@ export function App() {
         ? 'nuestra-historia'
         : section === 'voces'
         ? 'voces-forjadores'
-        : section === 'galeria'
-        ? 'galeria'
         : 'la-institucion';
     const el = document.getElementById(targetId);
     if (el) {
@@ -278,20 +275,6 @@ export function App() {
       mediaList: selectedMilestone.media,
       index: mediaIndex,
       contextTitle: `${selectedMilestone.year} · ${selectedMilestone.shortTitle}`,
-    });
-  };
-
-  const handleOpenGalleryLightbox = (
-    list: MilestoneMedia[],
-    index: number,
-    triggerEl: HTMLElement | null
-  ) => {
-    lastTriggerRef.current = triggerEl;
-    setLightboxState({
-      isOpen: true,
-      mediaList: list,
-      index,
-      contextTitle: 'Galería Documental del Proyecto',
     });
   };
 
@@ -417,13 +400,6 @@ export function App() {
           onPlayVoice={handlePlayVoice}
           onTogglePlayPause={handleTogglePlayPause}
           onNavigateToMilestone={handleSelectMilestoneAndScrollTop}
-        />
-
-        {/* Sección Real: Galería Documental */}
-        <GallerySection
-          milestones={sortedMilestones}
-          onOpenLightboxWithList={handleOpenGalleryLightbox}
-          onSelectMilestoneFromGallery={handleSelectMilestoneAndScrollTop}
         />
 
         {/* Sección Real: La Institución y sus 6 Sedes */}

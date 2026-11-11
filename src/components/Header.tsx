@@ -3,7 +3,6 @@ import React from 'react';
 export type NavSectionId =
   | 'historia'
   | 'voces'
-  | 'galeria'
   | 'institucion';
 
 interface HeaderProps {
@@ -18,7 +17,6 @@ export const Header: React.FC<HeaderProps> = ({
   const navItems: { id: NavSectionId; label: string; href: string }[] = [
     { id: 'historia', label: 'Nuestra historia', href: '#nuestra-historia' },
     { id: 'voces', label: 'Voces y Forjadores', href: '#voces-forjadores' },
-    { id: 'galeria', label: 'Galería', href: '#galeria' },
     { id: 'institucion', label: 'La institución', href: '#la-institucion' },
   ];
 
