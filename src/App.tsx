@@ -13,7 +13,6 @@ import { GallerySection } from './components/GallerySection';
 import { InstitutionSection } from './components/InstitutionSection';
 import { FullStoryModal } from './components/FullStoryModal';
 import { MediaLightboxModal } from './components/MediaLightboxModal';
-import { ArchiveExplorerModal } from './components/ArchiveExplorerModal';
 import {
   AudioPlayerDock,
   ActiveAudioPlayback,
@@ -59,7 +58,6 @@ export function App() {
 
   // Estados de ventanas modales y retorno de foco accesible
   const [isFullStoryOpen, setIsFullStoryOpen] = useState(false);
-  const [isArchiveOpen, setIsArchiveOpen] = useState(false);
   const [lightboxState, setLightboxState] = useState<{
     isOpen: boolean;
     mediaList: MilestoneMedia[];
@@ -352,7 +350,6 @@ export function App() {
       <Header
         activeSection={activeSection}
         onNavigate={handleNavigateSection}
-        onOpenArchive={() => setIsArchiveOpen(true)}
       />
 
       {/* Contenido Principal */}
@@ -432,7 +429,6 @@ export function App() {
         {/* Sección Real: La Institución y sus 6 Sedes */}
         <InstitutionSection
           onFilterBySede={handleFilterBySedeFromInstitution}
-          onOpenArchive={() => setIsArchiveOpen(true)}
         />
       </main>
 
@@ -511,14 +507,6 @@ export function App() {
         isOpen={lightboxState.isOpen}
         onClose={handleCloseLightbox}
         contextTitle={lightboxState.contextTitle}
-      />
-
-      {/* Modal: Explorador del Archivo Oral y Documental */}
-      <ArchiveExplorerModal
-        isOpen={isArchiveOpen}
-        onClose={() => setIsArchiveOpen(false)}
-        milestones={sortedMilestones}
-        onSelectMilestone={handleSelectMilestoneAndScrollTop}
       />
 
       {/* Reproductor Flotante Persistente de Grabaciones Originales y Transcripciones */}

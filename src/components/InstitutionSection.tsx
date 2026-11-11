@@ -14,12 +14,10 @@ import { SEDES_DATA } from '../data/milestones';
 
 interface InstitutionSectionProps {
   onFilterBySede: (sedeName: string) => void;
-  onOpenArchive: () => void;
 }
 
 export const InstitutionSection: React.FC<InstitutionSectionProps> = ({
   onFilterBySede,
-  onOpenArchive,
 }) => {
   return (
     <section
@@ -145,14 +143,13 @@ export const InstitutionSection: React.FC<InstitutionSectionProps> = ({
               <span className="text-xs text-[#4A524C]">
                 Investigación UTP · Licenciatura en Etnoeducación (2026)
               </span>
-              <button
-                type="button"
-                onClick={onOpenArchive}
+              <a
+                href="#voces-forjadores"
                 className="inline-flex items-center gap-1 text-xs font-bold text-[#113826] hover:text-[#9E7820] cursor-pointer"
               >
-                <span>Ver archivo oral</span>
+                <span>Ver testimonios orales</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -365,14 +362,13 @@ export const InstitutionSection: React.FC<InstitutionSectionProps> = ({
             </div>
           </div>
 
-          <button
-            type="button"
-            onClick={onOpenArchive}
+          <a
+            href="#voces-forjadores"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#113826] hover:bg-[#1D4D37] text-[#FAF7F0] text-xs sm:text-sm font-medium transition-colors shrink-0 cursor-pointer"
           >
             <BookOpen className="w-4 h-4" />
-            <span>Consultar índice de entrevistas (20)</span>
-          </button>
+            <span>Explorar testimonios y forjadores</span>
+          </a>
         </div>
       </div>
     </section>

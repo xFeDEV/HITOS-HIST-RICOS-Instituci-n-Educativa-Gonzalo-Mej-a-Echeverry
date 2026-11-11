@@ -1,5 +1,4 @@
 import React from 'react';
-import { FolderSearch } from 'lucide-react';
 
 export type NavSectionId =
   | 'historia'
@@ -10,13 +9,11 @@ export type NavSectionId =
 interface HeaderProps {
   activeSection: NavSectionId;
   onNavigate: (section: NavSectionId) => void;
-  onOpenArchive: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
   activeSection,
   onNavigate,
-  onOpenArchive,
 }) => {
   const navItems: { id: NavSectionId; label: string; href: string }[] = [
     { id: 'historia', label: 'Nuestra historia', href: '#nuestra-historia' },
@@ -114,20 +111,6 @@ export const Header: React.FC<HeaderProps> = ({
               className="h-10 sm:h-12 md:h-14 w-auto object-contain hover:scale-105 transition-transform drop-shadow-2xs"
             />
           </div>
-
-          <div
-            className="hidden lg:block h-8 w-px bg-[#B5AE9E]"
-            aria-hidden="true"
-          />
-
-          <button
-            type="button"
-            onClick={onOpenArchive}
-            className="inline-flex items-center gap-2 border border-[#113826] bg-[#FAF7F0]/70 hover:bg-[#113826] text-[#113826] hover:text-[#FAF7F0] px-3.5 sm:px-4 py-1.5 rounded-lg text-xs sm:text-[14.5px] font-medium transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C59B38]"
-          >
-            <FolderSearch className="w-4 h-4 sm:hidden" aria-hidden="true" />
-            <span>Explorar archivo</span>
-          </button>
         </nav>
       </div>
 
