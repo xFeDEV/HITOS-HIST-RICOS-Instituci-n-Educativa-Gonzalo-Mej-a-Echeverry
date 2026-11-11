@@ -60,6 +60,141 @@ export const InstitutionSection: React.FC<InstitutionSectionProps> = ({
               <strong>Sistema Agrocafetalero</strong>.
             </p>
 
+            {/* Red Institucional: Explicación de las 6 sedes con sus nombres */}
+            <div className="rounded-2xl border-2 border-[#C59B38]/60 bg-[#FAF7F0] p-4 sm:p-5 space-y-3.5 shadow-2xs">
+              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#DCD5C3] pb-2.5">
+                <div className="flex items-center gap-2">
+                  <School className="w-5 h-5 text-[#113826]" aria-hidden="true" />
+                  <h3 className="font-serif-display text-lg sm:text-xl font-bold text-[#113826]">
+                    Red Institucional: 6 Sedes Educativas
+                  </h3>
+                </div>
+                <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-[#113826]/10 text-[#113826] border border-[#113826]/20">
+                  Corregimiento de Altagracia · Pereira
+                </span>
+              </div>
+
+              <p className="text-xs sm:text-sm text-[#2B3930] leading-relaxed">
+                La <strong>Institución Educativa Gonzalo Mejía Echeverry</strong> articula su cobertura pedagógica y comunitaria a través de sus <strong>6 sedes</strong> (la Sede Principal campestre en La Una y sus 5 sedes rurales de primaria y preescolar):
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                <button
+                  type="button"
+                  onClick={() => onFilterBySede('Sede Principal')}
+                  className="text-left p-3 rounded-xl bg-[#F4EFE4] hover:bg-[#EAE3D2] border border-[#DCD5C3] transition-colors group cursor-pointer"
+                  title="Clic para filtrar hitos de la Sede Principal"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="font-serif-display font-bold text-sm text-[#113826] group-hover:text-[#9E7820] transition-colors">
+                      1. Sede Principal
+                    </span>
+                    <span className="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded bg-[#113826]/10 text-[#113826] font-semibold">
+                      Secundaria / Media
+                    </span>
+                  </div>
+                  <p className="text-xs text-[#5A625C] mt-1">
+                    Vereda La Una · Campus central, laboratorios, coliseo cubierto, media técnica y Jornada Sabatina.
+                  </p>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => onFilterBySede('Sede El Núcleo')}
+                  className="text-left p-3 rounded-xl bg-[#F4EFE4] hover:bg-[#EAE3D2] border border-[#DCD5C3] transition-colors group cursor-pointer"
+                  title="Clic para filtrar hitos de la Sede El Núcleo"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="font-serif-display font-bold text-sm text-[#113826] group-hover:text-[#9E7820] transition-colors">
+                      2. Sede El Núcleo
+                    </span>
+                    <span className="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded bg-[#113826]/10 text-[#113826] font-semibold">
+                      Primaria
+                    </span>
+                  </div>
+                  <p className="text-xs text-[#5A625C] mt-1">
+                    Casco principal de Altagracia · Histórica Escuela Vocacional Agrícola (Decreto 1240 de 1960).
+                  </p>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => onFilterBySede('Sede Cañaveral')}
+                  className="text-left p-3 rounded-xl bg-[#F4EFE4] hover:bg-[#EAE3D2] border border-[#DCD5C3] transition-colors group cursor-pointer"
+                  title="Clic para filtrar hitos de la Sede Cañaveral"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="font-serif-display font-bold text-sm text-[#113826] group-hover:text-[#9E7820] transition-colors">
+                      3. Sede Cañaveral
+                    </span>
+                    <span className="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded bg-[#113826]/10 text-[#113826] font-semibold">
+                      Escuela Nueva
+                    </span>
+                  </div>
+                  <p className="text-xs text-[#5A625C] mt-1">
+                    Vereda Cañaveral · Fundada en mingas campesinas (década de 1940); Laboratorio y Biblioteca de Semillas.
+                  </p>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => onFilterBySede('Sede Filobonito')}
+                  className="text-left p-3 rounded-xl bg-[#F4EFE4] hover:bg-[#EAE3D2] border border-[#DCD5C3] transition-colors group cursor-pointer"
+                  title="Clic para filtrar hitos de la Sede Filobonito"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="font-serif-display font-bold text-sm text-[#113826] group-hover:text-[#9E7820] transition-colors">
+                      4. Sede Filobonito
+                    </span>
+                    <span className="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded bg-[#113826]/10 text-[#113826] font-semibold">
+                      Escuela Nueva
+                    </span>
+                  </div>
+                  <p className="text-xs text-[#5A625C] mt-1">
+                    Vereda Filobonito · Predio donado por don Pío Durán (c. 1960); Sala de Sistemas y polinizadores.
+                  </p>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => onFilterBySede('Sede El Agrado')}
+                  className="text-left p-3 rounded-xl bg-[#F4EFE4] hover:bg-[#EAE3D2] border border-[#DCD5C3] transition-colors group cursor-pointer"
+                  title="Clic para filtrar hitos de la Sede El Agrado"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="font-serif-display font-bold text-sm text-[#113826] group-hover:text-[#9E7820] transition-colors">
+                      5. Sede El Agrado
+                    </span>
+                    <span className="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded bg-[#113826]/10 text-[#113826] font-semibold">
+                      Escuela Nueva
+                    </span>
+                  </div>
+                  <p className="text-xs text-[#5A625C] mt-1">
+                    Vereda El Estanquillo · Donación familia Rangel Trujillo (c. 1948); huella docente de 40 años.
+                  </p>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => onFilterBySede('Sede El Jazmín')}
+                  className="text-left p-3 rounded-xl bg-[#F4EFE4] hover:bg-[#EAE3D2] border border-[#DCD5C3] transition-colors group cursor-pointer"
+                  title="Clic para filtrar hitos de la Sede El Jazmín"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="font-serif-display font-bold text-sm text-[#113826] group-hover:text-[#9E7820] transition-colors">
+                      6. Sede El Jazmín
+                    </span>
+                    <span className="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded bg-[#113826]/10 text-[#113826] font-semibold">
+                      Inclusión Educativa
+                    </span>
+                  </div>
+                  <p className="text-xs text-[#5A625C] mt-1">
+                    Vereda El Jazmín · Aula de inclusión (Fundación Renovar Ser), Semillero de Hormigas y "El Conejo Gonzalito".
+                  </p>
+                </button>
+              </div>
+            </div>
+
             {/* Alianza Institucional: Escudo Oficial y Logos Aliados (Ampliados) */}
             <div className="flex flex-wrap items-center gap-4 sm:gap-5 bg-[#FAF7F0] border-2 border-[#DCD5C3] rounded-2xl p-4 sm:p-5 shadow-xs">
               <img
@@ -137,6 +272,40 @@ export const InstitutionSection: React.FC<InstitutionSectionProps> = ({
                   La Una, Cañaveral, Filobonito, El Jazmín, El Estanquillo y Centro
                 </dd>
               </div>
+
+              {/* Nombres de las 6 sedes en la Ficha */}
+              <div className="sm:col-span-2 p-3.5 rounded-xl bg-[#F4EFE4] border border-[#DCD5C3] space-y-2">
+                <dt className="text-[#5A625C] font-medium flex items-center justify-between text-xs">
+                  <span className="flex items-center gap-1.5 text-[#113826] font-semibold">
+                    <MapPin className="w-3.5 h-3.5 text-[#9E7820]" />
+                    Las 6 sedes de la institución (con clic para filtrar):
+                  </span>
+                  <span className="font-mono text-[10px] bg-[#113826]/10 text-[#113826] px-2 py-0.5 rounded font-bold">
+                    6 Sedes
+                  </span>
+                </dt>
+                <dd className="flex flex-wrap gap-1.5">
+                  {[
+                    'Sede Principal',
+                    'Sede El Núcleo',
+                    'Sede Cañaveral',
+                    'Sede Filobonito',
+                    'Sede El Agrado',
+                    'Sede El Jazmín',
+                  ].map((nombre, i) => (
+                    <button
+                      key={nombre}
+                      type="button"
+                      onClick={() => onFilterBySede(nombre)}
+                      className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-[#FAF7F0] hover:bg-[#113826] text-[#113826] hover:text-[#FAF7F0] border border-[#C7BFA8] text-xs font-semibold transition-colors cursor-pointer"
+                      title={`Filtrar hitos de ${nombre}`}
+                    >
+                      <span className="text-[#9E7820] font-mono text-[10px]">{i + 1}.</span>
+                      <span>{nombre}</span>
+                    </button>
+                  ))}
+                </dd>
+              </div>
             </dl>
 
             <div className="pt-2 border-t border-[#DCD5C3] flex items-center justify-between gap-3">
@@ -207,7 +376,7 @@ export const InstitutionSection: React.FC<InstitutionSectionProps> = ({
                     <MapPin className="w-3.5 h-3.5 text-[#9E7820]" />
                     Red Territorial de Sedes:
                   </strong>
-                  <span>Sede Secundaria Principal (Vereda La Una) y las 5 sedes rurales de primaria: Cañaveral, Filobonito, El Núcleo, El Jazmín, El Agrado y Guadualito.</span>
+                  <span>Sede Secundaria Principal (Vereda La Una) y las 5 sedes rurales de primaria: Sede El Núcleo, Sede Cañaveral, Sede Filobonito, Sede El Agrado y Sede El Jazmín.</span>
                 </div>
                 <div className="p-3 rounded-xl bg-[#F4EFE4] border border-[#DCD5C3]">
                   <strong className="text-[#113826] block font-semibold mb-0.5 flex items-center gap-1">
