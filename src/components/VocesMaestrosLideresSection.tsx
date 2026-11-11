@@ -535,6 +535,13 @@ export const VocesMaestrosLideresSection: React.FC<
           />
           <div className="h-10 w-px bg-[#C7BFA8]" aria-hidden="true" />
           <img
+            src="/assets/img/logo_semillero.png"
+            alt="Semillero de Investigación IEGME"
+            title="Semillero de Investigación"
+            className="h-13 sm:h-15 w-auto object-contain"
+          />
+          <div className="h-10 w-px bg-[#C7BFA8]" aria-hidden="true" />
+          <img
             src="/assets/img/logo_etno.png"
             alt="Logo Licenciatura en Etnoeducación y Desarrollo Comunitario UTP"
             className="h-14 sm:h-16 w-auto object-contain"

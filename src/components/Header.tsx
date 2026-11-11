@@ -91,8 +91,14 @@ export const Header: React.FC<HeaderProps> = ({
             ))}
           </div>
 
-          {/* Logos Aliados Académicos: Etnoeducación y UTP */}
-          <div className="hidden sm:flex items-center gap-2 pl-2 border-l border-[#C7BFA8]">
+          {/* Logos Aliados Académicos e Investigativos: Semillero, Etnoeducación y UTP */}
+          <div className="hidden sm:flex items-center gap-2.5 pl-2.5 border-l border-[#C7BFA8]">
+            <img
+              src="/assets/img/logo_semillero.png"
+              alt="Semillero de Investigación IEGME"
+              title="Semillero de Investigación IEGME"
+              className="h-8 sm:h-9 w-auto object-contain hover:scale-105 transition-transform"
+            />
             <img
               src="/assets/img/logo_etno.png"
               alt="Licenciatura en Etnoeducación y Desarrollo Comunitario"

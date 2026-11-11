@@ -455,24 +455,30 @@ export function App() {
             </div>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3.5">
+            <img
+              src="/assets/img/logo_semillero.png"
+              alt="Semillero de Investigación IEGME"
+              className="h-10 sm:h-12 w-auto object-contain"
+            />
+            <div className="h-8 w-px bg-[#C7BFA8]" aria-hidden="true" />
             <img
               src="/assets/img/logo_etno.png"
               alt="Licenciatura en Etnoeducación y Desarrollo Comunitario"
-              className="h-12 sm:h-14 w-auto object-contain"
+              className="h-11 sm:h-13 w-auto object-contain"
             />
-            <div className="h-9 w-px bg-[#C7BFA8]" aria-hidden="true" />
+            <div className="h-8 w-px bg-[#C7BFA8]" aria-hidden="true" />
             <img
               src="/assets/img/logo-utp.png"
               alt="Universidad Tecnológica de Pereira"
-              className="h-10 sm:h-12 w-auto object-contain"
+              className="h-9 sm:h-11 w-auto object-contain"
             />
             <div className="text-left max-w-xs">
               <span className="font-semibold text-[#113826] block text-xs">
                 Tejido de Memoria Comunitaria
               </span>
               <span className="text-[11px] text-[#5A625C] block">
-                Licenciatura en Etnoeducación · Universidad Tecnológica de Pereira (2026)
+                Semillero de Investigación · Licenciatura en Etnoeducación · UTP (2026)
               </span>
             </div>
           </div>

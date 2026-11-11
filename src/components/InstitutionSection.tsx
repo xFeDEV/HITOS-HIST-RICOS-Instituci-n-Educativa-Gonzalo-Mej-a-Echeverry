@@ -69,6 +69,13 @@ export const InstitutionSection: React.FC<InstitutionSectionProps> = ({
               />
               <div className="h-8 w-px bg-[#DCD5C3] hidden sm:block" aria-hidden="true" />
               <img
+                src="/assets/img/logo_semillero.png"
+                alt="Semillero de Investigación IEGME"
+                title="Semillero de Investigación"
+                className="h-11 w-auto object-contain shrink-0"
+              />
+              <div className="h-8 w-px bg-[#DCD5C3] hidden sm:block" aria-hidden="true" />
+              <img
                 src="/assets/img/logo_etno.png"
                 alt="Licenciatura en Etnoeducación y Desarrollo Comunitario"
                 className="h-12 w-auto object-contain shrink-0"
@@ -80,7 +87,7 @@ export const InstitutionSection: React.FC<InstitutionSectionProps> = ({
                 className="h-10 w-auto object-contain shrink-0"
               />
               <p className="text-xs text-[#4A524C] leading-snug flex-1 min-w-[180px]">
-                Proyecto desarrollado en articulación entre la <strong>Institución Educativa Gonzalo Mejía Echeverry</strong> y la <strong>Licenciatura en Etnoeducación</strong> de la <strong>Universidad Tecnológica de Pereira</strong>.
+                Proyecto desarrollado en articulación entre la <strong>Institución Educativa Gonzalo Mejía Echeverry</strong>, el <strong>Semillero de Investigación</strong> y la <strong>Licenciatura en Etnoeducación</strong> de la <strong>Universidad Tecnológica de Pereira</strong>.
               </p>
             </div>
           </div>
