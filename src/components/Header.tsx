@@ -3,7 +3,6 @@ import { FolderSearch } from 'lucide-react';
 
 export type NavSectionId =
   | 'historia'
-  | 'plano-vivo'
   | 'voces'
   | 'galeria'
   | 'institucion';
@@ -21,7 +20,6 @@ export const Header: React.FC<HeaderProps> = ({
 }) => {
   const navItems: { id: NavSectionId; label: string; href: string }[] = [
     { id: 'historia', label: 'Nuestra historia', href: '#nuestra-historia' },
-    { id: 'plano-vivo', label: 'Plano Vivo', href: '#plano-vivo' },
     { id: 'voces', label: 'Voces y Forjadores', href: '#voces-forjadores' },
     { id: 'galeria', label: 'Galería', href: '#galeria' },
     { id: 'institucion', label: 'La institución', href: '#la-institucion' },

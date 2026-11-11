@@ -8,7 +8,6 @@ import { FilterBar, FilterCategoryOption } from './components/FilterBar';
 import { TimelineSection } from './components/TimelineSection';
 import { MilestoneDetailPanel } from './components/MilestoneDetailPanel';
 import { TimeRangeControl } from './components/TimeRangeControl';
-import { PlanoVivoNucleoSection } from './components/PlanoVivoNucleoSection';
 import { VocesMaestrosLideresSection } from './components/VocesMaestrosLideresSection';
 import { GallerySection } from './components/GallerySection';
 import { InstitutionSection } from './components/InstitutionSection';
@@ -208,8 +207,6 @@ export function App() {
     const targetId =
       section === 'historia'
         ? 'nuestra-historia'
-        : section === 'plano-vivo'
-        ? 'plano-vivo'
         : section === 'voces'
         ? 'voces-forjadores'
         : section === 'galeria'
@@ -414,14 +411,6 @@ export function App() {
             setRangeStart(start);
             setRangeEnd(end);
           }}
-        />
-
-        {/* NUEVA SECCIÓN: Plano Vivo · La Granja Vocacional del Núcleo Escolar (Antes vs. Después) */}
-        <PlanoVivoNucleoSection
-          activePlayback={activePlayback}
-          isAudioPlaying={isAudioPlaying}
-          onPlayVoice={handlePlayVoice}
-          onTogglePlayPause={handleTogglePlayPause}
         />
 
         {/* NUEVA SECCIÓN: Galería de Voces, Maestros y Líderes que Forjaron la Institución */}
