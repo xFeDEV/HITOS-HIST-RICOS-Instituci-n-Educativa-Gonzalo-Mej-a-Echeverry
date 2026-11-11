@@ -7,6 +7,8 @@ import {
   BookOpen,
   ArrowUpRight,
   FileCode2,
+  Compass,
+  Maximize2,
 } from 'lucide-react';
 import { SEDES_DATA } from '../data/milestones';
 
@@ -60,33 +62,33 @@ export const InstitutionSection: React.FC<InstitutionSectionProps> = ({
               <strong>Sistema Agrocafetalero</strong>.
             </p>
 
-            {/* Alianza Institucional: Escudo Oficial y Logos Aliados */}
-            <div className="flex flex-wrap items-center gap-3.5 bg-[#FAF7F0] border border-[#DCD5C3] rounded-xl p-3 shadow-2xs">
+            {/* Alianza Institucional: Escudo Oficial y Logos Aliados (Ampliados) */}
+            <div className="flex flex-wrap items-center gap-4 sm:gap-5 bg-[#FAF7F0] border-2 border-[#DCD5C3] rounded-2xl p-4 sm:p-5 shadow-xs">
               <img
                 src="/assets/img/logo_gonzalo.png"
                 alt="Escudo Oficial Institución Educativa Gonzalo Mejía Echeverry"
-                className="h-12 w-auto object-contain shrink-0"
+                className="h-16 sm:h-20 w-auto object-contain shrink-0 drop-shadow-2xs"
               />
-              <div className="h-8 w-px bg-[#DCD5C3] hidden sm:block" aria-hidden="true" />
+              <div className="h-12 w-px bg-[#DCD5C3] hidden sm:block" aria-hidden="true" />
               <img
                 src="/assets/img/logo_semillero.png"
                 alt="Semillero de Investigación IEGME"
                 title="Semillero de Investigación"
-                className="h-11 w-auto object-contain shrink-0"
+                className="h-14 sm:h-18 w-auto object-contain shrink-0 drop-shadow-2xs"
               />
-              <div className="h-8 w-px bg-[#DCD5C3] hidden sm:block" aria-hidden="true" />
+              <div className="h-12 w-px bg-[#DCD5C3] hidden sm:block" aria-hidden="true" />
               <img
                 src="/assets/img/logo_etno.png"
                 alt="Licenciatura en Etnoeducación y Desarrollo Comunitario"
-                className="h-12 w-auto object-contain shrink-0"
+                className="h-14 sm:h-18 w-auto object-contain shrink-0 drop-shadow-2xs"
               />
-              <div className="h-8 w-px bg-[#DCD5C3] hidden sm:block" aria-hidden="true" />
+              <div className="h-12 w-px bg-[#DCD5C3] hidden sm:block" aria-hidden="true" />
               <img
                 src="/assets/img/logo-utp.png"
                 alt="Universidad Tecnológica de Pereira"
-                className="h-10 w-auto object-contain shrink-0"
+                className="h-12 sm:h-16 w-auto object-contain shrink-0 drop-shadow-2xs"
               />
-              <p className="text-xs text-[#4A524C] leading-snug flex-1 min-w-[180px]">
+              <p className="text-xs sm:text-[13px] text-[#4A524C] leading-snug flex-1 min-w-[200px]">
                 Proyecto desarrollado en articulación entre la <strong>Institución Educativa Gonzalo Mejía Echeverry</strong>, el <strong>Semillero de Investigación</strong> y la <strong>Licenciatura en Etnoeducación</strong> de la <strong>Universidad Tecnológica de Pereira</strong>.
               </p>
             </div>
@@ -151,6 +153,90 @@ export const InstitutionSection: React.FC<InstitutionSectionProps> = ({
                 <span>Ver archivo oral</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Mapa Cartográfico Oficial de las Sedes (Doctorado Ciencias Ambientales UTP 2025) */}
+        <div className="rounded-2xl border-2 border-[#C59B38] bg-[#FAF7F0] p-5 sm:p-7 shadow-xs">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-7 items-center">
+            {/* Visual map preview with zoom/expand */}
+            <div className="lg:col-span-5 relative group overflow-hidden rounded-xl border border-[#B5AE9E] bg-[#EFE9DA] shadow-xs flex items-center justify-center">
+              <a
+                href="/assets/img/mapa-iegme-sedes-alta-resolucion.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Haga clic para ver el mapa en tamaño completo"
+                className="block relative w-full overflow-hidden"
+              >
+                <img
+                  src="/assets/img/mapa-iegme-sedes-web.jpg"
+                  alt="Mapa oficial de ubicación de sedes de la Institución Educativa Gonzalo Mejía Echeverry"
+                  className="w-full h-auto max-h-[420px] object-contain group-hover:scale-102 transition-transform duration-500 mx-auto"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-[#0F3322]/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span className="bg-[#113826]/95 text-[#FAF7F0] text-xs font-semibold px-3.5 py-1.5 rounded-full shadow-md flex items-center gap-1.5 border border-[#C59B38]">
+                    <Maximize2 className="w-3.5 h-3.5 text-[#C59B38]" />
+                    <span>Ver mapa en alta resolución</span>
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            {/* Cartographic Description & Sede Connection */}
+            <div className="lg:col-span-7 space-y-3.5">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#9E7820] flex items-center gap-1.5">
+                  <Compass className="w-3.5 h-3.5 text-[#113826]" />
+                  Cartografía Oficial · Doctorado Interinstitucional UTP
+                </span>
+                <span className="text-[11px] font-mono text-[#5A625C] bg-[#EAE3D2] px-2 py-0.5 rounded font-semibold">
+                  Junio 2025 · MAGNA-SIRGAS
+                </span>
+              </div>
+
+              <h3 className="font-serif-display text-2xl sm:text-3xl font-bold text-[#0F3322] leading-tight">
+                Mapa Oficial: Ubicación Territorial de las Sedes
+              </h3>
+
+              <p className="text-xs sm:text-sm text-[#2B3930] leading-relaxed">
+                Cartografía oficial elaborada para el <strong>Municipio de Pereira (Secretaría de Educación)</strong> y la <strong>Institución Educativa Gonzalo Mejía Echeverry</strong> en el marco del <em>Doctorado Interinstitucional en Ciencias Ambientales</em> (Universidad Tecnológica de Pereira, Universidad del Valle y Universidad del Cauca).
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-[#3D4A41] pt-1">
+                <div className="p-3 rounded-xl bg-[#F4EFE4] border border-[#DCD5C3]">
+                  <strong className="text-[#113826] block font-semibold mb-0.5 flex items-center gap-1">
+                    <MapPin className="w-3.5 h-3.5 text-[#9E7820]" />
+                    Red Territorial de Sedes:
+                  </strong>
+                  <span>Sede Secundaria Principal (Vereda La Una) y las 5 sedes rurales de primaria: Cañaveral, Filobonito, El Núcleo, El Jazmín, El Agrado y Guadualito.</span>
+                </div>
+                <div className="p-3 rounded-xl bg-[#F4EFE4] border border-[#DCD5C3]">
+                  <strong className="text-[#113826] block font-semibold mb-0.5 flex items-center gap-1">
+                    <Sprout className="w-3.5 h-3.5 text-[#113826]" />
+                    Geografía y Microcuencas:
+                  </strong>
+                  <span>Balcón cordillerano sobre la Quebrada Cestillal, red de drenaje hacia el río La Vieja, Vía Pereira-Alcalá y Variante Condina.</span>
+                </div>
+              </div>
+
+              <div className="pt-2 flex flex-wrap items-center gap-3">
+                <a
+                  href="/assets/img/mapa-iegme-sedes-alta-resolucion.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-[#113826] hover:bg-[#1D4D37] text-[#FAF7F0] text-xs sm:text-sm font-semibold transition-colors shadow-2xs"
+                >
+                  <Maximize2 className="w-4 h-4 text-[#C59B38]" />
+                  <span>Abrir mapa completo en alta resolución (PNG)</span>
+                  <ArrowUpRight className="w-3.5 h-3.5" />
+                </a>
+
+                <span className="text-[11px] text-[#5A625C]">
+                  Dra. Claudia Viviana Hurtado Loaiza · Santiago Restrepo Calle · Fuentes: IGAC, OSM, AMCO
+                </span>
+              </div>
             </div>
           </div>
         </div>

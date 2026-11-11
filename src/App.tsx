@@ -436,48 +436,51 @@ export function App() {
         />
       </main>
 
-      {/* Pie de página institucional con los 3 logos principales */}
-      <footer className="border-t border-[#C7BFA8] bg-[#EAE3D2] py-8 px-4 sm:px-8 text-xs text-[#3D4A41]">
-        <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-3.5">
+      {/* Pie de página institucional con logos ampliados */}
+      <footer className="border-t border-[#C7BFA8] bg-[#EAE3D2] py-10 px-4 sm:px-8 text-xs text-[#3D4A41]">
+        <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-8">
+          <div className="flex items-center gap-4 sm:gap-5">
             <img
               src="/assets/img/logo_gonzalo.png"
               alt="Escudo Institución Educativa Gonzalo Mejía Echeverry"
-              className="h-12 sm:h-14 w-auto object-contain"
+              className="h-16 sm:h-20 md:h-24 w-auto object-contain drop-shadow-2xs"
             />
             <div>
-              <strong className="font-serif-display text-sm sm:text-base text-[#113826] block">
+              <strong className="font-serif-display text-base sm:text-lg text-[#113826] block">
                 Institución Educativa Gonzalo Mejía Echeverry
               </strong>
-              <span className="text-[#4A524C]">
+              <span className="text-xs sm:text-sm text-[#4A524C]">
                 Corregimiento de Altagracia, Pereira, Risaralda · NIT 891408309-6
               </span>
             </div>
           </div>
 
-          <div className="flex items-center gap-3.5">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-5">
             <img
               src="/assets/img/logo_semillero.png"
               alt="Semillero de Investigación IEGME"
-              className="h-10 sm:h-12 w-auto object-contain"
+              title="Semillero de Investigación IEGME"
+              className="h-14 sm:h-18 md:h-20 w-auto object-contain drop-shadow-2xs"
             />
-            <div className="h-8 w-px bg-[#C7BFA8]" aria-hidden="true" />
+            <div className="h-12 w-px bg-[#C7BFA8] hidden sm:block" aria-hidden="true" />
             <img
               src="/assets/img/logo_etno.png"
               alt="Licenciatura en Etnoeducación y Desarrollo Comunitario"
-              className="h-11 sm:h-13 w-auto object-contain"
+              title="Licenciatura en Etnoeducación y Desarrollo Comunitario"
+              className="h-14 sm:h-18 md:h-20 w-auto object-contain drop-shadow-2xs"
             />
-            <div className="h-8 w-px bg-[#C7BFA8]" aria-hidden="true" />
+            <div className="h-12 w-px bg-[#C7BFA8] hidden sm:block" aria-hidden="true" />
             <img
               src="/assets/img/logo-utp.png"
               alt="Universidad Tecnológica de Pereira"
-              className="h-9 sm:h-11 w-auto object-contain"
+              title="Universidad Tecnológica de Pereira"
+              className="h-12 sm:h-15 md:h-17 w-auto object-contain drop-shadow-2xs"
             />
-            <div className="text-left max-w-xs">
-              <span className="font-semibold text-[#113826] block text-xs">
+            <div className="text-left max-w-xs pl-2">
+              <span className="font-semibold text-[#113826] block text-xs sm:text-sm">
                 Tejido de Memoria Comunitaria
               </span>
-              <span className="text-[11px] text-[#5A625C] block">
+              <span className="text-[11px] sm:text-xs text-[#5A625C] block">
                 Semillero de Investigación · Licenciatura en Etnoeducación · UTP (2026)
               </span>
             </div>

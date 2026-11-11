@@ -527,30 +527,30 @@ export const VocesMaestrosLideresSection: React.FC<
 
       {/* Banner de Créditos Académicos UTP, Etnoeducación e IE Gonzalo Mejía Echeverry */}
       <div className="mt-10 rounded-2xl border-2 border-[#C59B38] bg-[#FAF7F0] p-5 sm:p-6 flex flex-col lg:flex-row items-center justify-between gap-6 shadow-xs">
-        <div className="flex items-center gap-3.5 shrink-0">
+        <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-5 shrink-0">
           <img
             src="/assets/img/logo_gonzalo.png"
             alt="Escudo Institución Educativa Gonzalo Mejía Echeverry"
-            className="h-14 sm:h-16 w-auto object-contain"
+            className="h-16 sm:h-20 md:h-22 w-auto object-contain drop-shadow-2xs"
           />
-          <div className="h-10 w-px bg-[#C7BFA8]" aria-hidden="true" />
+          <div className="h-12 w-px bg-[#C7BFA8] hidden sm:block" aria-hidden="true" />
           <img
             src="/assets/img/logo_semillero.png"
             alt="Semillero de Investigación IEGME"
             title="Semillero de Investigación"
-            className="h-13 sm:h-15 w-auto object-contain"
+            className="h-14 sm:h-18 md:h-20 w-auto object-contain drop-shadow-2xs"
           />
-          <div className="h-10 w-px bg-[#C7BFA8]" aria-hidden="true" />
+          <div className="h-12 w-px bg-[#C7BFA8] hidden sm:block" aria-hidden="true" />
           <img
             src="/assets/img/logo_etno.png"
             alt="Logo Licenciatura en Etnoeducación y Desarrollo Comunitario UTP"
-            className="h-14 sm:h-16 w-auto object-contain"
+            className="h-15 sm:h-19 md:h-20 w-auto object-contain drop-shadow-2xs"
           />
-          <div className="h-10 w-px bg-[#C7BFA8]" aria-hidden="true" />
+          <div className="h-12 w-px bg-[#C7BFA8] hidden sm:block" aria-hidden="true" />
           <img
             src="/assets/img/logo-utp.png"
             alt="Escudo Universidad Tecnológica de Pereira UTP"
-            className="h-12 sm:h-14 w-auto object-contain"
+            className="h-13 sm:h-16 md:h-18 w-auto object-contain drop-shadow-2xs"
           />
         </div>
 

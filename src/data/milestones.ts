@@ -26,6 +26,19 @@ export const PROJECT_ARCHIVE_MEDIA: Record<string, MilestoneMedia> = {
     sede: 'Sede Principal y Sede Núcleo',
     alt: 'Fotografía satelital del corregimiento de Altagracia mostrando la ubicación de la Sede Principal en la vereda La Una y el Núcleo Escolar Altagracia',
   },
+  mapaCartograficoOficialSedes: {
+    id: 'media-mapa-cartografico-sedes-utp',
+    url: '/assets/img/mapa-iegme-sedes-web.jpg',
+    title: 'Cartografía Oficial: Ubicación de las Sedes IEGME (Doctorado UTP 2025)',
+    caption:
+      'Mapa elaborado en el marco del Doctorado Interinstitucional en Ciencias Ambientales (UTP, Univalle, Unicauca) por la Dra. Claudia Viviana Hurtado Loaiza y el diseñador Santiago Restrepo Calle. Muestra la ubicación georreferenciada de la Sede Principal y las sedes rurales en el relieve de Altagracia.',
+    yearOrPeriod: 'Junio 2025',
+    source: 'Doctorado en Ciencias Ambientales UTP / Secretaría de Educación de Pereira (Fuentes: IGAC, OSM, AMCO)',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Cartografía oficial georreferenciada',
+    sede: 'Red de Sedes del Corregimiento de Altagracia',
+    alt: 'Mapa cartográfico del Municipio de Pereira con la ubicación de todas las sedes de la IE Gonzalo Mejía Echeverri',
+  },
   infografiaHitosOriginal: {
     id: 'media-infografia-hitos',
     url: '/assets/archivo/infografia-hitos-investigacion.jpg',
@@ -185,6 +198,19 @@ export const PROJECT_ARCHIVE_MEDIA: Record<string, MilestoneMedia> = {
     assetTypeLabel: 'Fotografía real institucional',
     sede: 'Sede Filobonito',
     alt: 'Fachada de la Sede Filobonito con jardín de flores, mural de colibrí y juegos infantiles pintados en la cancha',
+  },
+  sedeFilobonitoFotoOficial: {
+    id: 'media-filobonito-oficial-fachada',
+    url: '/assets/img/filobonito.jpg',
+    title: 'Fotografía oficial: Fachada principal y jardineras de la Sede Filobonito',
+    caption:
+      'Aviso institucional de la Sede Filo Bonito (Secretaría de Educación Municipal de Pereira - IEGME), con murales de colibríes en tapas recicladas y jardines florales en llantas reutilizadas.',
+    yearOrPeriod: 'Fotografía oficial contemporánea',
+    source: 'Registro fotográfico oficial Sede Filobonito',
+    isRealProjectAsset: true,
+    assetTypeLabel: 'Fotografía oficial de sede',
+    sede: 'Sede Filobonito',
+    alt: 'Fachada oficial de la Sede Filo Bonito con letrero institucional, mural de colibrí y flores',
   },
   sedeElJazminFachada: {
     id: 'media-jazmin-fachada',
@@ -921,7 +947,9 @@ export const MILESTONES_DATA: HistoricalMilestone[] = [
       },
     ],
     media: [
+      PROJECT_ARCHIVE_MEDIA.mapaCartograficoOficialSedes,
       PROJECT_ARCHIVE_MEDIA.vallaInstitucionalSedes,
+      PROJECT_ARCHIVE_MEDIA.sedeFilobonitoFotoOficial,
       PROJECT_ARCHIVE_MEDIA.filobonitoIndependienteCarroza,
       PROJECT_ARCHIVE_MEDIA.filobonitoSemanaPazManos,
       PROJECT_ARCHIVE_MEDIA.mapaAereoAltagracia,

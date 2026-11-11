@@ -27,7 +27,7 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className="sticky top-0 z-30 bg-[#F4EFE4]/95 backdrop-blur-sm border-b border-[#C7BFA8]">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 min-h-16 py-2 flex items-center justify-between gap-3">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 min-h-20 py-2.5 sm:py-3.5 flex items-center justify-between gap-4">
         {/* Brand / Institution Name */}
         <a
           href="#nuestra-historia"
@@ -35,26 +35,26 @@ export const Header: React.FC<HeaderProps> = ({
             e.preventDefault();
             onNavigate('historia');
           }}
-          className="flex items-center gap-2.5 sm:gap-3.5 group focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C59B38] rounded-md min-w-0"
+          className="flex items-center gap-3 sm:gap-4 group focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C59B38] rounded-md min-w-0"
           aria-label="Institución Educativa Gonzalo Mejía Echeverry - Ir al inicio"
         >
-          {/* Escudo Oficial IE Gonzalo Mejía Echeverry */}
+          {/* Escudo Oficial IE Gonzalo Mejía Echeverry (Tamaño ampliado y nítido) */}
           <img
             src="/assets/img/logo_gonzalo.png"
             alt="Escudo Oficial Institución Educativa Gonzalo Mejía Echeverry"
-            className="w-10 h-10 sm:w-12 sm:h-12 object-contain shrink-0 group-hover:scale-105 transition-transform"
+            className="w-13 h-13 sm:w-16 sm:h-16 md:w-20 md:h-20 object-contain shrink-0 group-hover:scale-105 transition-transform drop-shadow-2xs"
           />
 
           <div
-            className="h-8 sm:h-9 w-px bg-[#B5AE9E] shrink-0"
+            className="h-10 sm:h-12 w-px bg-[#B5AE9E] shrink-0"
             aria-hidden="true"
           />
 
           <div className="flex flex-col min-w-0">
-            <span className="font-serif-display text-[14.5px] sm:text-[18.5px] font-bold text-[#113826] leading-[1.15] tracking-tight group-hover:text-[#1D4D37] transition-colors truncate">
+            <span className="font-serif-display text-[15px] sm:text-[19px] md:text-[21px] font-bold text-[#113826] leading-[1.12] tracking-tight group-hover:text-[#1D4D37] transition-colors truncate">
               Institución Educativa
             </span>
-            <span className="font-serif-display text-[14.5px] sm:text-[18.5px] font-bold text-[#113826] leading-[1.15] tracking-tight group-hover:text-[#1D4D37] transition-colors truncate">
+            <span className="font-serif-display text-[15px] sm:text-[19px] md:text-[21px] font-bold text-[#113826] leading-[1.12] tracking-tight group-hover:text-[#1D4D37] transition-colors truncate">
               Gonzalo Mejía Echeverry
             </span>
           </div>
@@ -63,9 +63,9 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Navigation Links, Institutional Logos & Archive CTA */}
         <nav
           aria-label="Navegación principal"
-          className="flex items-center gap-3 sm:gap-5"
+          className="flex items-center gap-3 sm:gap-6"
         >
-          <div className="hidden lg:flex items-center gap-5">
+          <div className="hidden xl:flex items-center gap-6">
             {navItems.map((item) => (
               <a
                 key={item.id}
@@ -74,7 +74,7 @@ export const Header: React.FC<HeaderProps> = ({
                   e.preventDefault();
                   onNavigate(item.id);
                 }}
-                className={`relative py-2 text-[14.5px] font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C59B38] rounded-sm ${
+                className={`relative py-2 text-[15px] font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C59B38] rounded-sm ${
                   activeSection === item.id
                     ? 'text-[#113826] font-semibold'
                     : 'text-[#3D4A41] hover:text-[#113826]'
@@ -91,30 +91,32 @@ export const Header: React.FC<HeaderProps> = ({
             ))}
           </div>
 
-          {/* Logos Aliados Académicos e Investigativos: Semillero, Etnoeducación y UTP */}
-          <div className="hidden sm:flex items-center gap-2.5 pl-2.5 border-l border-[#C7BFA8]">
+          {/* Logos Aliados Académicos e Investigativos: Semillero, Etnoeducación y UTP (Tamaño más grande) */}
+          <div className="hidden sm:flex items-center gap-3 md:gap-4 pl-3 md:pl-4 border-l-2 border-[#C7BFA8]">
             <img
               src="/assets/img/logo_semillero.png"
               alt="Semillero de Investigación IEGME"
               title="Semillero de Investigación IEGME"
-              className="h-8 sm:h-9 w-auto object-contain hover:scale-105 transition-transform"
+              className="h-11 sm:h-13 md:h-15 w-auto object-contain hover:scale-105 transition-transform drop-shadow-2xs"
             />
+            <div className="h-9 md:h-11 w-px bg-[#DCD5C3]" aria-hidden="true" />
             <img
               src="/assets/img/logo_etno.png"
               alt="Licenciatura en Etnoeducación y Desarrollo Comunitario"
               title="Licenciatura en Etnoeducación y Desarrollo Comunitario UTP"
-              className="h-8 sm:h-9 w-auto object-contain hover:scale-105 transition-transform"
+              className="h-11 sm:h-13 md:h-15 w-auto object-contain hover:scale-105 transition-transform drop-shadow-2xs"
             />
+            <div className="h-9 md:h-11 w-px bg-[#DCD5C3]" aria-hidden="true" />
             <img
               src="/assets/img/logo-utp.png"
               alt="Universidad Tecnológica de Pereira"
               title="Universidad Tecnológica de Pereira"
-              className="h-7 sm:h-8 w-auto object-contain hover:scale-105 transition-transform"
+              className="h-10 sm:h-12 md:h-14 w-auto object-contain hover:scale-105 transition-transform drop-shadow-2xs"
             />
           </div>
 
           <div
-            className="hidden lg:block h-6 w-px bg-[#B5AE9E]"
+            className="hidden lg:block h-8 w-px bg-[#B5AE9E]"
             aria-hidden="true"
           />
 

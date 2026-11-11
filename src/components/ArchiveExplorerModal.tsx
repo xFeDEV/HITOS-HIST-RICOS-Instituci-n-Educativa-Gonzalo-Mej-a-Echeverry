@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { X, Search, Mic, FileText, ArrowUpRight } from 'lucide-react';
+import { X, Search, Mic, FileText, ArrowUpRight, MapPin } from 'lucide-react';
 import { HistoricalMilestone } from '../types/timeline';
 
 interface InterviewRecord {
@@ -229,7 +229,7 @@ export const ArchiveExplorerModal: React.FC<ArchiveExplorerModalProps> = ({
 
         {/* Search & Document Summary */}
         <div className="px-5 sm:px-7 py-4 bg-[#EFE9DA]/60 border-b border-[#DCD5C3] space-y-3">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-[#2C3A31]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs text-[#2C3A31]">
             <div className="p-3 rounded-xl bg-[#FAF7F0] border border-[#C7BFA8] flex items-start gap-2.5">
               <FileText className="w-4 h-4 text-[#113826] shrink-0 mt-0.5" />
               <div>
@@ -249,13 +249,32 @@ export const ArchiveExplorerModal: React.FC<ArchiveExplorerModalProps> = ({
               <Mic className="w-4 h-4 text-[#9E7820] shrink-0 mt-0.5" />
               <div>
                 <strong className="font-semibold text-[#113826] block">
-                  Documento 2: Transcripciones de Entrevistas Sede por Sede
+                  Documento 2: Transcripciones Sede por Sede
                 </strong>
                 <span>
-                  20 entrevistas semiestructuradas a docentes históricos,
-                  estudiantes de grado 11, egresados, madres de familia y
-                  presidentes de Juntas de Acción Comunal de las 6 sedes.
+                  20 entrevistas a docentes históricos, estudiantes de grado 11, egresados, madres de familia y presidentes de Juntas de Acción Comunal de las 6 sedes.
                 </span>
+              </div>
+            </div>
+
+            <div className="p-3 rounded-xl bg-[#FAF7F0] border border-[#C7BFA8] flex items-start gap-2.5">
+              <MapPin className="w-4 h-4 text-[#C59B38] shrink-0 mt-0.5" />
+              <div>
+                <strong className="font-semibold text-[#113826] block">
+                  Cartografía Oficial: Sedes IEGME (2025)
+                </strong>
+                <span>
+                  Mapa oficial de ubicación territorial (Doctorado UTP, Dra. Claudia Viviana Hurtado & Santiago Restrepo).
+                </span>
+                <a
+                  href="/assets/img/mapa-iegme-sedes-alta-resolucion.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-1.5 inline-flex items-center gap-1 text-[11px] font-bold text-[#113826] hover:text-[#9E7820]"
+                >
+                  <span>Abrir mapa alta resolución</span>
+                  <ArrowUpRight className="w-3 h-3" />
+                </a>
               </div>
             </div>
           </div>
